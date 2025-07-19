@@ -184,9 +184,13 @@
         </div>
         <footer class="flex justify-center">
           <div class="flex max-w-[960px] flex-1 flex-col">
-            <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
-              <p class="text-[#60758a] text-base font-normal leading-normal">© 2025 Vishal Mewara. All rights reserved.</p>
+            <footer class="text-center px-5 py-8 text-[#60758a] text-base font-normal border-t">
+              ©<span id="year"></span> Vishal Mewara. All rights reserved.
             </footer>
+            <script>
+              // Set current year
+              document.getElementById('year').textContent = new Date().getFullYear();
+            </script>
           </div>
         </footer>
       </div>
