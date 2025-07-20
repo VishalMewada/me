@@ -359,8 +359,8 @@ const FormHandler = {
             
             // Prepare template parameters
             const templateParams = {
-                from_name: data.name,
-                from_email: data.email,
+                from_name: data.user_name,
+                from_email: data.user_email,
                 subject: data.subject || 'New Contact Form Submission',
                 message: data.message
             };
