@@ -322,7 +322,6 @@ const FormHandler = {
     initEmailJS() {
         if (typeof emailjs !== 'undefined') {
             emailjs.init(CONFIG.EMAILJS.PUBLIC_KEY);
-            console.log('EmailJS initialized successfully');
         } else {
             console.error('EmailJS not loaded');
         }
@@ -376,10 +375,6 @@ const FormHandler = {
                 sender_email: data.email
             };
             
-            console.log('Form data collected:', data);
-            console.log('Template parameters:', templateParams);
-            console.log('EmailJS config:', CONFIG.EMAILJS);
-            
             // Check if EmailJS is available
             if (typeof emailjs === 'undefined') {
                 throw new Error('EmailJS not loaded');
@@ -418,6 +413,9 @@ const FormHandler = {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return emailRegex.test(email);
     },
+
+
+
     /**
      * Initialize form event listeners
      */
@@ -428,7 +426,6 @@ const FormHandler = {
         // Retry EmailJS initialization if not loaded initially
         if (typeof emailjs === 'undefined') {
             setTimeout(() => {
-                console.log('Retrying EmailJS initialization...');
                 this.initEmailJS();
             }, 1000);
         }
@@ -436,15 +433,9 @@ const FormHandler = {
         const contactForm = document.getElementById('contact-form');
         if (contactForm) {
             contactForm.addEventListener('submit', this.handleContactForm.bind(this));
-            console.log('Contact form event listener attached');
         } else {
             console.error('Contact form not found');
         }
-        
-        // Test EmailJS connection after a delay
-        setTimeout(() => {
-            this.testEmailJS();
-        }, 2000);
     }
 };
 
