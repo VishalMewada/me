@@ -338,40 +338,10 @@
         </footer>
     </div>
 
+    <!-- EmailJS CDN -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
     <!-- JavaScript -->
     <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-<script>
-  (function(){
-    emailjs.init("oFiLURRvxACzTkodG");
-  })();
-</script>
-    <script>
-  document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-    
-    // Optionally, provide feedback to the user before sending
-    const button = event.target.querySelector('button[type="submit"]');
-    const originalText = button.innerHTML;
-    button.disabled = true;
-    button.innerHTML = "Sending...";
-
-    emailjs.sendForm(
-      'service_f9sv6am',
-      'template_ikji9av',
-      this
-    )
-    .then(function() {
-      alert('Your message has been sent successfully!');
-      document.getElementById('contact-form').reset();
-      button.disabled = false;
-      button.innerHTML = originalText;
-    }, function(error) {
-      alert('Failed to send your message. Please try again later.');
-      button.disabled = false;
-      button.innerHTML = originalText;
-    });
-  });
-</script>
 </body>
 </html>

@@ -13,7 +13,12 @@ const CONFIG = {
         linkedin: "https://www.linkedin.com/in/vishalmewara/"
     },
     ANIMATION_DELAY: 100,
-    NOTIFICATION_DURATION: 3000
+    NOTIFICATION_DURATION: 3000,
+    EMAILJS: {
+        PUBLIC_KEY: "oFiLURRvxACzTkodG",
+        TEMPLATE_ID: "template_ikji9av",
+        SERVICE_ID: "service_f9sv6am"
+    }
 };
 
 /**
@@ -312,30 +317,76 @@ const Animations = {
  */
 const FormHandler = {
     /**
+     * Initialize EmailJS
+     */
+    initEmailJS() {
+        if (typeof emailjs !== 'undefined') {
+            emailjs.init(CONFIG.EMAILJS.PUBLIC_KEY);
+        } else {
+            console.error('EmailJS not loaded');
+        }
+    },
+
+    /**
      * Handle contact form submission
      * @param {Event} event - Form submission event
      */
-    handleContactForm(event) {
+    async handleContactForm(event) {
         event.preventDefault();
         
         const form = event.target;
-        const formData = new FormData(form);
-        const data = Object.fromEntries(formData);
+        const submitButton = form.querySelector('button[type="submit"]');
+        const originalButtonText = submitButton.innerHTML;
         
-        // Basic validation
-        if (!data.name || !data.email) {
-            Utils.showNotification('Please fill in all required fields.', 'error');
-            return;
+        // Show loading state
+        submitButton.disabled = true;
+        submitButton.innerHTML = '<i class="mdi mdi-loading mdi-spin mr-2" aria-hidden="true"></i>Sending...';
+        
+        try {
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData);
+            
+            // Basic validation
+            if (!data.name || !data.email || !data.message) {
+                Utils.showNotification('Please fill in all required fields.', 'error');
+                return;
+            }
+            
+            if (!this.isValidEmail(data.email)) {
+                Utils.showNotification('Please enter a valid email address.', 'error');
+                return;
+            }
+            
+            // Prepare template parameters
+            const templateParams = {
+                from_name: data.name,
+                from_email: data.email,
+                subject: data.subject || 'New Contact Form Submission',
+                message: data.message
+            };
+            
+            // Send email using EmailJS
+            const response = await emailjs.send(
+                CONFIG.EMAILJS.SERVICE_ID,
+                CONFIG.EMAILJS.TEMPLATE_ID,
+                templateParams
+            );
+            
+            if (response.status === 200) {
+                Utils.showNotification('Thank you for your message! I\'ll get back to you soon.', 'success');
+                form.reset();
+            } else {
+                throw new Error('Failed to send email');
+            }
+            
+        } catch (error) {
+            console.error('Error sending email:', error);
+            Utils.showNotification('Failed to send message. Please try again later.', 'error');
+        } finally {
+            // Reset button state
+            submitButton.disabled = false;
+            submitButton.innerHTML = originalButtonText;
         }
-        
-        if (!this.isValidEmail(data.email)) {
-            Utils.showNotification('Please enter a valid email address.', 'error');
-            return;
-        }
-        
-        // Simulate form submission
-        Utils.showNotification('Thank you for your message! I\'ll get back to you soon.', 'success');
-        form.reset();
     },
 
     /**
@@ -352,6 +403,9 @@ const FormHandler = {
      * Initialize form event listeners
      */
     init() {
+        // Initialize EmailJS
+        this.initEmailJS();
+        
         const contactForm = document.getElementById('contact-form');
         if (contactForm) {
             contactForm.addEventListener('submit', this.handleContactForm.bind(this));
