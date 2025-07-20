@@ -418,46 +418,6 @@ const FormHandler = {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return emailRegex.test(email);
     },
-
-    /**
-     * Test EmailJS connection
-     */
-    async testEmailJS() {
-        try {
-            if (typeof emailjs === 'undefined') {
-                console.error('EmailJS not loaded');
-                return false;
-            }
-            
-            console.log('Testing EmailJS connection...');
-            console.log('Service ID:', CONFIG.EMAILJS.SERVICE_ID);
-            console.log('Template ID:', CONFIG.EMAILJS.TEMPLATE_ID);
-            console.log('Public Key:', CONFIG.EMAILJS.PUBLIC_KEY);
-            
-            // Test with minimal data
-            const testParams = {
-                from_name: 'Test User',
-                from_email: 'test@example.com',
-                name: 'Test User',
-                email: 'test@example.com',
-                subject: 'Test Email',
-                message: 'This is a test email from the contact form.'
-            };
-            
-            const response = await emailjs.send(
-                CONFIG.EMAILJS.SERVICE_ID,
-                CONFIG.EMAILJS.TEMPLATE_ID,
-                testParams
-            );
-            
-            console.log('EmailJS test successful:', response);
-            return true;
-        } catch (error) {
-            console.error('EmailJS test failed:', error);
-            return false;
-        }
-    },
-
     /**
      * Initialize form event listeners
      */
