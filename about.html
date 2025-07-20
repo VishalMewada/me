@@ -1,167 +1,358 @@
-<html>
-  <head>
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
-    <link
-      rel="stylesheet"
-      as="style"
-      onload="this.rel='stylesheet'"
-      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Space+Grotesk%3Awght%40400%3B500%3B700"
-    />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Vishal Mewara - Experienced Instructional Designer & Developer with 10+ years of expertise in creating innovative digital learning experiences.">
+    <meta name="keywords" content="about, instructional design, eLearning, developer, Vishal Mewara, experience, skills">
+    <meta name="author" content="Vishal Mewara">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vishalmewara.com/about.html">
+    <meta property="og:title" content="About - Vishal Mewara | Instructional Designer & Developer">
+    <meta property="og:description" content="Experienced Instructional Designer & Developer with 10+ years of expertise in creating innovative digital learning experiences.">
+    <meta property="og:image" content="https://media.licdn.com/dms/image/v2/D4D03AQFC4pZePWIFxg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1696746461584?e=1755734400&v=beta&t=Gnom0oF9NSksu06ruZArvsIOl6ee1Yi-rlFlFdM8QCA">
 
-    <title>Stitch Design</title>
-    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
-
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://vishalmewara.com/about.html">
+    <meta property="twitter:title" content="About - Vishal Mewara | Instructional Designer & Developer">
+    <meta property="twitter:description" content="Experienced Instructional Designer & Developer with 10+ years of expertise in creating innovative digital learning experiences.">
+    <meta property="twitter:image" content="https://media.licdn.com/dms/image/v2/D4D03AQFC4pZePWIFxg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1696746461584?e=1755734400&v=beta&t=Gnom0oF9NSksu06ruZArvsIOl6ee1Yi-rlFlFdM8QCA">
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Noto+Sans:wght@400;500;700;900&display=swap">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
+    
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  </head>
-  <body>
-    <div class="relative flex size-full min-h-screen flex-col bg-neutral-50 group/design-root overflow-x-hidden" style='font-family: "Space Grotesk", "Noto Sans", sans-serif;'>
-      <div class="layout-container flex h-full grow flex-col">
-        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#ededed] px-10 py-3">
-          <div class="flex items-center gap-4 text-[#141414]">
-            <div class="size-4">
-              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_6_319)">
-                  <path
-                    d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z"
-                    fill="currentColor"
-                  ></path>
-                </g>
-                <defs>
-                  <clipPath id="clip0_6_319"><rect width="48" height="48" fill="white"></rect></clipPath>
-                </defs>
-              </svg>
-            </div>
-            <h2 class="text-[#141414] text-lg font-bold leading-tight tracking-[-0.015em]">Portfolio</h2>
-          </div>
-          <div class="flex flex-1 justify-end gap-8">
-            <div class="flex items-center gap-9">
-              <a class="text-[#111418] text-sm font-medium leading-normal" href="index.html">Home</a>
-              <a class="text-[#111418] text-sm font-medium leading-normal" href="about.html">About</a>
-              <a class="text-[#111418] text-sm font-medium leading-normal" href="Project.html">Projects</a>
-              <a class="text-[#111418] text-sm font-medium leading-normal" href="#">Contact</a>
-            </div>
-            <button onclick="downloadPDF()" class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#0c7ff2] text-white text-sm font-bold leading-normal tracking-[0.015em]">
-              <span class="truncate">Download CV</span>
-            </button>
-            <script>
-              function downloadPDF() {
-                const link = document.createElement('a');
-                link.href = "https://vishalmewada.github.io/VishalMewara/Vishal%20Mewara%20-%20Resume%20-%20Assistant%20Manager%20L&D.pdf";
-                link.download = "Vishal_Mewara_Resume.pdf";
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
-              }
-            </script>
-          </div>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <title>About - Vishal Mewara | Instructional Designer & Developer</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,">
+</head>
+<body class="bg-white font-sans antialiased">
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-blue-600 text-white px-4 py-2 rounded z-50">
+        Skip to main content
+    </a>
+
+    <div class="min-h-screen flex flex-col">
+        <!-- Header -->
+        <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-sm border-b border-gray-200 shadow-sm">
+            <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" role="navigation" aria-label="Main navigation">
+                <div class="flex items-center justify-between h-16">
+                    <!-- Logo -->
+                    <div class="flex items-center space-x-3">
+                        <div class="w-8 h-8 text-blue-600" aria-hidden="true">
+                            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_6_319)">
+                                    <path d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z" fill="currentColor"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_6_319">
+                                        <rect width="48" height="48" fill="white"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h1 class="text-xl font-bold text-gray-900">Portfolio</h1>
+                    </div>
+
+                    <!-- Navigation Links -->
+                    <div class="hidden md:flex items-center space-x-8" role="menubar">
+                        <a href="index.html" class="text-gray-900 hover:text-blue-600 transition-colors duration-200 font-medium" role="menuitem">Home</a>
+                        <a href="about.html" class="text-blue-600 font-medium" role="menuitem" aria-current="page">About</a>
+                        <a href="Project.html" class="text-gray-900 hover:text-blue-600 transition-colors duration-200 font-medium" role="menuitem">Projects</a>
+                        <a href="Contact.html" class="text-gray-900 hover:text-blue-600 transition-colors duration-200 font-medium" role="menuitem">Contact</a>
+                    </div>
+
+                    <!-- CTA Button -->
+                    <button 
+                        id="download-cv-btn"
+                        class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                        aria-label="Download my resume"
+                    >
+                        Download CV
+                    </button>
+
+                    <!-- Mobile menu button -->
+                    <button 
+                        id="mobile-menu-btn"
+                        class="md:hidden p-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        aria-label="Toggle mobile menu"
+                        aria-expanded="false"
+                        aria-controls="mobile-menu"
+                    >
+                        <i class="mdi mdi-menu text-xl" aria-hidden="true"></i>
+                    </button>
+                </div>
+
+                <!-- Mobile menu -->
+                <div id="mobile-menu" class="hidden md:hidden pb-4" role="menu" aria-labelledby="mobile-menu-btn">
+                    <div class="flex flex-col space-y-3">
+                        <a href="index.html" class="text-gray-900 hover:text-blue-600 transition-colors duration-200 font-medium" role="menuitem">Home</a>
+                        <a href="about.html" class="text-blue-600 font-medium" role="menuitem" aria-current="page">About</a>
+                        <a href="Project.html" class="text-gray-900 hover:text-blue-600 transition-colors duration-200 font-medium" role="menuitem">Projects</a>
+                        <a href="Contact.html" class="text-gray-900 hover:text-blue-600 transition-colors duration-200 font-medium" role="menuitem">Contact</a>
+                    </div>
+                </div>
+            </nav>
         </header>
-        <div class="px-40 flex flex-1 justify-center py-5">
-          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
-            <div class="flex p-4 @container">
-              <div class="flex w-full flex-col gap-4 items-center">
-                <div class="flex gap-4 flex-col items-center">
-                  <div
-                    class="bg-center bg-no-repeat aspect-square bg-cover rounded-full min-h-32 w-32"
-                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB5Evc51tniQgWMR6atOhNpAaJNHcGb8AfnPCAe351hwqb7iEesakqt2dKuWSw4FQGn5T2kwAZvnyfP8i3_vDchexlCn4TldAZ1QMLjHsK2hfRKzAa1u0HP78W9wWyVCYjgK8qY9Ct1f66b8_DfXJf0Oim7e1DVRV-RPtYWQBR3ZZ-_x0ORmAMKYH7EDbzVqTRNU9YEiftO-iByM2k8xazYExA-DS9F-SS2yEVTF_DIHFgSserPljEbs40C-8OPKr6e60vEy1qojQ0");'
-                  ></div>
-                  <div class="flex flex-col items-center justify-center justify-center">
-                    <p class="text-[#141414] text-[22px] font-bold leading-tight tracking-[-0.015em] text-center">Sophia Bennett</p>
-                    <p class="text-neutral-500 text-base font-normal leading-normal text-center">Product Designer</p>
-                    <p class="text-neutral-500 text-base font-normal leading-normal text-center">Based in San Francisco, CA</p>
-                  </div>
+
+        <!-- Main Content -->
+        <main id="main-content" class="flex-1">
+            <!-- Hero Section -->
+            <section class="bg-gradient-to-br from-blue-50 to-indigo-100 py-16" aria-labelledby="hero-heading">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center">
+                        <h2 id="hero-heading" class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+                            About Me
+                        </h2>
+                        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                            Experienced Instructional Designer & Developer with a passion for creating innovative digital learning experiences
+                        </p>
+                    </div>
                 </div>
-              </div>
-            </div>
-            <p class="text-[#141414] text-base font-normal leading-normal pb-3 pt-1 px-4">
-              I'm a product designer with over 5 years of experience in creating user-centered digital products. My passion lies in solving complex problems through intuitive and
-              visually appealing designs. I thrive on collaboration and enjoy working closely with cross-functional teams to bring ideas to life. My design philosophy is rooted in
-              empathy, understanding user needs, and crafting solutions that make a meaningful impact.
-            </p>
-            <h2 class="text-[#141414] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Skills</h2>
-            <div class="flex flex-col gap-3 p-4">
-              <div class="flex gap-6 justify-between">
-                <p class="text-[#141414] text-base font-medium leading-normal">UI/UX Design</p>
-                <p class="text-[#141414] text-sm font-normal leading-normal">90%</p>
-              </div>
-              <div class="rounded bg-[#dbdbdb]"><div class="h-2 rounded bg-black" style="width: 90%;"></div></div>
-            </div>
-            <div class="flex flex-col gap-3 p-4">
-              <div class="flex gap-6 justify-between">
-                <p class="text-[#141414] text-base font-medium leading-normal">Interaction Design</p>
-                <p class="text-[#141414] text-sm font-normal leading-normal">85%</p>
-              </div>
-              <div class="rounded bg-[#dbdbdb]"><div class="h-2 rounded bg-black" style="width: 85%;"></div></div>
-            </div>
-            <div class="flex flex-col gap-3 p-4">
-              <div class="flex gap-6 justify-between">
-                <p class="text-[#141414] text-base font-medium leading-normal">User Research</p>
-                <p class="text-[#141414] text-sm font-normal leading-normal">80%</p>
-              </div>
-              <div class="rounded bg-[#dbdbdb]"><div class="h-2 rounded bg-black" style="width: 80%;"></div></div>
-            </div>
-            <div class="flex flex-col gap-3 p-4">
-              <div class="flex gap-6 justify-between">
-                <p class="text-[#141414] text-base font-medium leading-normal">Prototyping</p>
-                <p class="text-[#141414] text-sm font-normal leading-normal">75%</p>
-              </div>
-              <div class="rounded bg-[#dbdbdb]"><div class="h-2 rounded bg-black" style="width: 75%;"></div></div>
-            </div>
-            <h2 class="text-[#141414] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Experience</h2>
-            <div class="grid grid-cols-[40px_1fr] gap-x-2 px-4">
-              <div class="flex flex-col items-center gap-1 pt-3">
-                <div class="text-[#141414]" data-icon="Briefcase" data-size="24px" data-weight="regular">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                    <path
-                      d="M216,56H176V48a24,24,0,0,0-24-24H104A24,24,0,0,0,80,48v8H40A16,16,0,0,0,24,72V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V72A16,16,0,0,0,216,56ZM96,48a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8v8H96ZM216,72v41.61A184,184,0,0,1,128,136a184.07,184.07,0,0,1-88-22.38V72Zm0,128H40V131.64A200.19,200.19,0,0,0,128,152a200.25,200.25,0,0,0,88-20.37V200ZM104,112a8,8,0,0,1,8-8h32a8,8,0,0,1,0,16H112A8,8,0,0,1,104,112Z"
-                    ></path>
-                  </svg>
+            </section>
+
+            <!-- Profile Section -->
+            <section class="py-16" aria-labelledby="profile-heading">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="flex flex-col lg:flex-row items-center lg:items-start gap-12">
+                        <!-- Profile Image -->
+                        <div class="flex-shrink-0">
+                            <img 
+                                src="https://media.licdn.com/dms/image/v2/D4D03AQFC4pZePWIFxg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1696746461584?e=1755734400&v=beta&t=Gnom0oF9NSksu06ruZArvsIOl6ee1Yi-rlFlFdM8QCA" 
+                                alt="Vishal Mewara - Instructional Designer & Developer"
+                                class="w-48 h-48 lg:w-64 lg:h-64 rounded-full object-cover shadow-xl"
+                                loading="lazy"
+                            >
+                        </div>
+
+                        <!-- Profile Info -->
+                        <div class="flex-1 text-center lg:text-left">
+                            <h3 id="profile-heading" class="text-3xl font-bold text-gray-900 mb-4">Vishal Mewara</h3>
+                            <p class="text-xl text-gray-600 mb-6">Experienced Instructional Designer & Developer</p>
+                            <p class="text-lg text-gray-700 mb-4">📍 Mumbai, India</p>
+                            <div class="prose prose-lg text-gray-700 max-w-none">
+                                <p class="mb-4 text-gray-700">
+                                    I'm an experienced Instructional Designer and Developer with over 10 years of expertise in crafting and leading scalable learning programs for global teams. I specialize in translating complex business needs into impactful, learner-centered experiences by leveraging proven instructional design methodologies and advanced digital tools.
+                                </p>
+                                <p class="mb-4 text-gray-700">
+                                    In my recent roles, I spearheaded AI integration initiatives that increased content development efficiency by 30% through automation and innovative workflows. I also established rigorous quality standards that reduced delivery errors by 90%, ensuring consistent excellence across deliverables.
+                                </p>
+                                <p class="mb-4 text-gray-700">
+                                    My work has been consistently recognized for its impact and quality—I was named a Top Performer for three consecutive years at GXO and earned the same distinction in my first year at IBM.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="w-[1.5px] bg-[#dbdbdb] h-2 grow"></div>
-              </div>
-              <div class="flex flex-1 flex-col py-3">
-                <p class="text-[#141414] text-base font-medium leading-normal">Senior Product Designer at Innovate Solutions</p>
-                <p class="text-neutral-500 text-base font-normal leading-normal">2020 - Present</p>
-              </div>
-              <div class="flex flex-col items-center gap-1">
-                <div class="w-[1.5px] bg-[#dbdbdb] h-2"></div>
-                <div class="text-[#141414]" data-icon="Briefcase" data-size="24px" data-weight="regular">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                    <path
-                      d="M216,56H176V48a24,24,0,0,0-24-24H104A24,24,0,0,0,80,48v8H40A16,16,0,0,0,24,72V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V72A16,16,0,0,0,216,56ZM96,48a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8v8H96ZM216,72v41.61A184,184,0,0,1,128,136a184.07,184.07,0,0,1-88-22.38V72Zm0,128H40V131.64A200.19,200.19,0,0,0,128,152a200.25,200.25,0,0,0,88-20.37V200ZM104,112a8,8,0,0,1,8-8h32a8,8,0,0,1,0,16H112A8,8,0,0,1,104,112Z"
-                    ></path>
-                  </svg>
+            </section>
+
+            <!-- Skills Section -->
+            <section class="py-16 bg-gray-50" aria-labelledby="skills-heading">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <h2 id="skills-heading" class="text-3xl font-bold text-gray-900 mb-12 text-center">Skills & Expertise</h2>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <!-- Skill Category 1 -->
+                        <div class="space-y-6">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-4">Instructional Design</h3>
+                            
+                            <div class="space-y-4" role="list">
+                                <div role="listitem">
+                                    <div class="flex justify-between items-center mb-2">
+                                        <span class="text-gray-700 font-medium">Instructional Design & Development</span>
+                                        <span class="text-sm text-gray-500" aria-label="90 percent">90%</span>
+                                    </div>
+                                    <div class="skill-progress">
+                                        <div class="skill-progress-bar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" role="progressbar"></div>
+                                    </div>
+                                </div>
+                                
+                                <div role="listitem">
+                                    <div class="flex justify-between items-center mb-2">
+                                        <span class="text-gray-700 font-medium">Articulate Storyline & Rise 360</span>
+                                        <span class="text-sm text-gray-500" aria-label="90 percent">90%</span>
+                                    </div>
+                                    <div class="skill-progress">
+                                        <div class="skill-progress-bar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" role="progressbar"></div>
+                                    </div>
+                                </div>
+                                
+                                <div role="listitem">
+                                    <div class="flex justify-between items-center mb-2">
+                                        <span class="text-gray-700 font-medium">Storyboarding</span>
+                                        <span class="text-sm text-gray-500" aria-label="80 percent">80%</span>
+                                    </div>
+                                    <div class="skill-progress">
+                                        <div class="skill-progress-bar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" role="progressbar"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Skill Category 2 -->
+                        <div class="space-y-6">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-4">Advanced Technologies</h3>
+                            
+                            <div class="space-y-4" role="list">
+                                <div role="listitem">
+                                    <div class="flex justify-between items-center mb-2">
+                                        <span class="text-gray-700 font-medium">AI-Driven Content Development</span>
+                                        <span class="text-sm text-gray-500" aria-label="85 percent">85%</span>
+                                    </div>
+                                    <div class="skill-progress">
+                                        <div class="skill-progress-bar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" role="progressbar"></div>
+                                    </div>
+                                </div>
+                                
+                                <div role="listitem">
+                                    <div class="flex justify-between items-center mb-2">
+                                        <span class="text-gray-700 font-medium">Stakeholder Management & Needs Analysis</span>
+                                        <span class="text-sm text-gray-500" aria-label="85 percent">85%</span>
+                                    </div>
+                                    <div class="skill-progress">
+                                        <div class="skill-progress-bar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" role="progressbar"></div>
+                                    </div>
+                                </div>
+                                
+                                <div role="listitem">
+                                    <div class="flex justify-between items-center mb-2">
+                                        <span class="text-gray-700 font-medium">Global Team Collaboration</span>
+                                        <span class="text-sm text-gray-500" aria-label="90 percent">90%</span>
+                                    </div>
+                                    <div class="skill-progress">
+                                        <div class="skill-progress-bar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" role="progressbar"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="w-[1.5px] bg-[#dbdbdb] h-2 grow"></div>
-              </div>
-              <div class="flex flex-1 flex-col py-3">
-                <p class="text-[#141414] text-base font-medium leading-normal">Product Designer at Creative Minds Inc.</p>
-                <p class="text-neutral-500 text-base font-normal leading-normal">2018 - 2020</p>
-              </div>
-              <div class="flex flex-col items-center gap-1 pb-3">
-                <div class="w-[1.5px] bg-[#dbdbdb] h-2"></div>
-                <div class="text-[#141414]" data-icon="Briefcase" data-size="24px" data-weight="regular">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                    <path
-                      d="M216,56H176V48a24,24,0,0,0-24-24H104A24,24,0,0,0,80,48v8H40A16,16,0,0,0,24,72V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V72A16,16,0,0,0,216,56ZM96,48a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8v8H96ZM216,72v41.61A184,184,0,0,1,128,136a184.07,184.07,0,0,1-88-22.38V72Zm0,128H40V131.64A200.19,200.19,0,0,0,128,152a200.25,200.25,0,0,0,88-20.37V200ZM104,112a8,8,0,0,1,8-8h32a8,8,0,0,1,0,16H112A8,8,0,0,1,104,112Z"
-                    ></path>
-                  </svg>
+            </section>
+
+            <!-- Experience Section -->
+            <section class="py-16" aria-labelledby="experience-heading">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <h2 id="experience-heading" class="text-3xl font-bold text-gray-900 mb-12 text-center">Professional Experience</h2>
+                    
+                    <div class="timeline">
+                        <!-- Experience Item 1 -->
+                        <div class="timeline-item">
+                            <div class="bg-white rounded-lg shadow-md p-6">
+                                <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                                    <h3 class="text-xl font-semibold text-gray-900">Assistant Manager L&D</h3>
+                                    <span class="text-sm text-gray-500 mt-2 md:mt-0">2023 - Present</span>
+                                </div>
+                                <p class="text-lg text-blue-600 font-medium mb-3">IBM</p>
+                                <p class="text-gray-700 mb-4">
+                                    Leading the development of comprehensive learning programs for global teams, focusing on AI integration and automation to enhance content development efficiency by 30%.
+                                </p>
+                                <ul class="list-disc list-inside text-gray-600 space-y-1">
+                                    <li>Spearheaded AI integration initiatives for content development</li>
+                                    <li>Established quality standards reducing delivery errors by 90%</li>
+                                    <li>Named Top Performer in first year</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Experience Item 2 -->
+                        <div class="timeline-item">
+                            <div class="bg-white rounded-lg shadow-md p-6">
+                                <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                                    <h3 class="text-xl font-semibold text-gray-900">Senior Instructional Designer</h3>
+                                    <span class="text-sm text-gray-500 mt-2 md:mt-0">2020 - 2023</span>
+                                </div>
+                                <p class="text-lg text-blue-600 font-medium mb-3">GXO Logistics</p>
+                                <p class="text-gray-700 mb-4">
+                                    Designed and developed innovative eLearning solutions for supply chain operations, creating engaging training programs that improved employee performance and operational efficiency.
+                                </p>
+                                <ul class="list-disc list-inside text-gray-600 space-y-1">
+                                    <li>Created comprehensive training programs for global operations</li>
+                                    <li>Implemented interactive learning modules using Articulate Storyline</li>
+                                    <li>Named Top Performer for three consecutive years</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Experience Item 3 -->
+                        <div class="timeline-item">
+                            <div class="bg-white rounded-lg shadow-md p-6">
+                                <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                                    <h3 class="text-xl font-semibold text-gray-900">Instructional Designer</h3>
+                                    <span class="text-sm text-gray-500 mt-2 md:mt-0">2018 - 2020</span>
+                                </div>
+                                <p class="text-lg text-blue-600 font-medium mb-3">Previous Companies</p>
+                                <p class="text-gray-700 mb-4">
+                                    Developed foundational skills in instructional design, working with various organizations to create effective learning experiences and establish best practices in the field.
+                                </p>
+                                <ul class="list-disc list-inside text-gray-600 space-y-1">
+                                    <li>Developed foundational instructional design skills</li>
+                                    <li>Worked with multiple organizations and industries</li>
+                                    <li>Established best practices in eLearning development</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="flex flex-1 flex-col py-3">
-                <p class="text-[#141414] text-base font-medium leading-normal">Junior Designer at Design Studio X</p>
-                <p class="text-neutral-500 text-base font-normal leading-normal">2016 - 2018</p>
-              </div>
+            </section>
+
+            <!-- Call to Action Section -->
+            <section class="py-16 bg-blue-600 text-white" aria-labelledby="cta-heading">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <h2 id="cta-heading" class="text-3xl font-bold mb-6">Ready to Work Together?</h2>
+                    <p class="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
+                        I'm always excited to take on new challenges and collaborate on innovative projects. Let's discuss how we can create impactful learning experiences together.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a 
+                            href="Contact.html" 
+                            class="inline-flex items-center bg-white text-blue-600 font-semibold py-3 px-6 rounded-lg hover:bg-gray-100 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-blue-600"
+                            aria-label="Get in touch to discuss collaboration opportunities"
+                        >
+                            Get in Touch
+                            <i class="mdi mdi-arrow-right ml-2" aria-hidden="true"></i>
+                        </a>
+                        <a 
+                            href="Project.html" 
+                            class="inline-flex items-center border-2 border-white text-white font-semibold py-3 px-6 rounded-lg hover:bg-white hover:text-blue-600 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-blue-600"
+                            aria-label="View my project portfolio"
+                        >
+                            View My Work
+                            <i class="mdi mdi-folder-open ml-2" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-gray-900 text-white py-12" role="contentinfo">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <p class="text-gray-400">
+                        © <span id="current-year"></span> Vishal Mewara. All rights reserved.
+                    </p>
+                </div>
             </div>
-            <div class="flex px-4 py-3 justify-start">
-              <button
-                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#ededed] text-[#141414] text-sm font-bold leading-normal tracking-[0.015em]"
-              >
-                <span class="truncate">Back to Portfolio</span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+        </footer>
     </div>
-  </body>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
 </html>

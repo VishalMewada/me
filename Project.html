@@ -1,143 +1,671 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
-    <link
-      rel="stylesheet"
-      as="style"
-      onload="this.rel='stylesheet'"
-      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Space+Grotesk%3Awght%40400%3B500%3B700"
-    />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projects by Vishal Mewara - Instructional Designer & Developer. Explore case studies and portfolio of innovative digital learning experiences.">
+    <meta name="keywords" content="projects, portfolio, case studies, instructional design, eLearning, developer, Vishal Mewara">
+    <meta name="author" content="Vishal Mewara">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vishalmewara.com/Project.html">
+    <meta property="og:title" content="Projects - Vishal Mewara | Instructional Designer & Developer">
+    <meta property="og:description" content="Projects by Vishal Mewara - Instructional Designer & Developer. Explore case studies and portfolio of innovative digital learning experiences.">
+    <meta property="og:image" content="https://media.licdn.com/dms/image/v2/D4D03AQFC4pZePWIFxg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1696746461584?e=1755734400&v=beta&t=Gnom0oF9NSksu06ruZArvsIOl6ee1Yi-rlFlFdM8QCA">
 
-    <title>Stitch Design</title>
-    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://vishalmewara.com/Project.html">
+    <meta property="twitter:title" content="Projects - Vishal Mewara | Instructional Designer & Developer">
+    <meta property="twitter:description" content="Projects by Vishal Mewara - Instructional Designer & Developer. Explore case studies and portfolio of innovative digital learning experiences.">
+    <meta property="twitter:image" content="https://media.licdn.com/dms/image/v2/D4D03AQFC4pZePWIFxg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1696746461584?e=1755734400&v=beta&t=Gnom0oF9NSksu06ruZArvsIOl6ee1Yi-rlFlFdM8QCA">
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Noto+Sans:wght@400;500;700;900&display=swap">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
 
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Projects - Vishal Mewara | Instructional Designer & Developer</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,">
   </head>
-  <body>
-    <div class="relative flex size-full min-h-screen flex-col bg-neutral-50 group/design-root overflow-x-hidden" style='font-family: "Space Grotesk", "Noto Sans", sans-serif;'>
-      <div class="layout-container flex h-full grow flex-col">
-        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#ededed] px-10 py-3">
-          <div class="flex items-center gap-4 text-[#141414]">
-            <div class="size-4">
+<body class="bg-white font-sans antialiased">
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-blue-600 text-white px-4 py-2 rounded z-50">
+        Skip to main content
+    </a>
+
+    <div class="min-h-screen flex flex-col">
+        <!-- Header -->
+        <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-sm border-b border-gray-200 shadow-sm">
+            <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" role="navigation" aria-label="Main navigation">
+                <div class="flex items-center justify-between h-16">
+                    <!-- Logo -->
+                    <div class="flex items-center space-x-3">
+                        <div class="w-8 h-8 text-blue-600" aria-hidden="true">
               <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_6_319)">
-                  <path
-                    d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z"
-                    fill="currentColor"
-                  ></path>
+                                    <path d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z" fill="currentColor"></path>
                 </g>
                 <defs>
-                  <clipPath id="clip0_6_319"><rect width="48" height="48" fill="white"></rect></clipPath>
+                                    <clipPath id="clip0_6_319">
+                                        <rect width="48" height="48" fill="white"></rect>
+                                    </clipPath>
                 </defs>
               </svg>
             </div>
-            <h2 class="text-[#141414] text-lg font-bold leading-tight tracking-[-0.015em]">Portfolio</h2>
+                        <h1 class="text-xl font-bold text-gray-900">Portfolio</h1>
           </div>
-          <div class="flex flex-1 justify-end gap-8">
-            <div class="flex items-center gap-9">
-              <a class="text-[#111418] text-sm font-medium leading-normal" href="index.html">Home</a>
-              <a class="text-[#111418] text-sm font-medium leading-normal" href="about.html">About</a>
-              <a class="text-[#111418] text-sm font-medium leading-normal" href="Project.html">Projects</a>
-              <a class="text-[#111418] text-sm font-medium leading-normal" href="#">Contact</a>
+
+                    <!-- Navigation Links -->
+                    <div class="hidden md:flex items-center space-x-8" role="menubar">
+                        <a href="index.html" class="text-gray-900 hover:text-blue-600 transition-colors duration-200 font-medium" role="menuitem">Home</a>
+                        <a href="about.html" class="text-gray-900 hover:text-blue-600 transition-colors duration-200 font-medium" role="menuitem">About</a>
+                        <a href="Project.html" class="text-blue-600 font-medium" role="menuitem" aria-current="page">Projects</a>
+                        <a href="Contact.html" class="text-gray-900 hover:text-blue-600 transition-colors duration-200 font-medium" role="menuitem">Contact</a>
             </div>
-            <button onclick="downloadPDF()" class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#0c7ff2] text-white text-sm font-bold leading-normal tracking-[0.015em]">
-              <span class="truncate">Download CV</span>
+
+                    <!-- CTA Button -->
+                    <button 
+                        id="download-cv-btn"
+                        class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                        aria-label="Download my resume"
+                    >
+                        Download CV
+                    </button>
+
+                    <!-- Mobile menu button -->
+                    <button 
+                        id="mobile-menu-btn"
+                        class="md:hidden p-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        aria-label="Toggle mobile menu"
+                        aria-expanded="false"
+                        aria-controls="mobile-menu"
+                    >
+                        <i class="mdi mdi-menu text-xl" aria-hidden="true"></i>
             </button>
-            <script>
-              function downloadPDF() {
-                const link = document.createElement('a');
-                link.href = "https://vishalmewada.github.io/VishalMewara/Vishal%20Mewara%20-%20Resume%20-%20Assistant%20Manager%20L&D.pdf";
-                link.download = "Vishal_Mewara_Resume.pdf";
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
-              }
-            </script>
+                </div>
+
+                <!-- Mobile menu -->
+                <div id="mobile-menu" class="hidden md:hidden pb-4" role="menu" aria-labelledby="mobile-menu-btn">
+                    <div class="flex flex-col space-y-3">
+                        <a href="index.html" class="text-gray-900 hover:text-blue-600 transition-colors duration-200 font-medium" role="menuitem">Home</a>
+                        <a href="about.html" class="text-gray-900 hover:text-blue-600 transition-colors duration-200 font-medium" role="menuitem">About</a>
+                        <a href="Project.html" class="text-blue-600 font-medium" role="menuitem" aria-current="page">Projects</a>
+                        <a href="Contact.html" class="text-gray-900 hover:text-blue-600 transition-colors duration-200 font-medium" role="menuitem">Contact</a>
+                    </div>
           </div>
+            </nav>
         </header>
-        <div class="px-40 flex flex-1 justify-center py-5">
-          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
-            <div class="flex flex-wrap justify-between gap-3 p-4">
-              <p class="text-[#141414] tracking-light text-[32px] font-bold leading-tight min-w-72">
-                Project Case Study: Redesigning the User Experience for a Travel Booking Platform
+
+        <!-- Main Content -->
+        <main id="main-content" class="flex-1">
+            <!-- Hero Section -->
+            <section class="bg-gradient-to-br from-blue-50 to-indigo-100 py-16" aria-labelledby="hero-heading">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center">
+                        <h2 id="hero-heading" class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+                            My Projects
+                        </h2>
+                        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                            Explore my portfolio of innovative instructional design and eLearning projects that demonstrate my expertise in creating engaging digital learning experiences.
               </p>
             </div>
-            <div class="@container">
-              <div class="@[480px]:px-4 @[480px]:py-3">
-                <div
-                  class="w-full bg-center bg-no-repeat bg-cover flex flex-col justify-end overflow-hidden bg-neutral-50 @[480px]:rounded-xl min-h-80"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDa6cjUX7AWtVpbXBj5Y8snahtLyzY0OrEkuaDCX-j2cSDmVJprJUfLOFLmhcV9ZD-qveOeFHoyi-lizJ5rDT0D_UZ-6EXPm8pCHeo-K-pBOo9XDtPks4Co3vsUzcNQ4IfOTf7FiekHHKMwy3RcZcUoevoWfYVO-7y-jF0uIiaPhnNc3huea5RU7uNLIohvWHlnaF1Ej7pByshCv2MHJ0mzWqdO9lSKYx6tS1UrH1qXaUiX4GsYP8bLulQ5BfT50rQmFMYGG0gAO78");'
-                ></div>
+                </div>
+            </section>
+
+            <!-- Project Categories -->
+            <section class="py-16" aria-labelledby="projects-heading">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <!-- Filter Buttons -->
+                    <div class="flex flex-wrap justify-center gap-4 mb-12" role="tablist" aria-label="Project categories">
+                        <button 
+                            class="filter-btn active" 
+                            data-filter="all"
+                            role="tab"
+                            aria-selected="true"
+                            aria-controls="all-projects"
+                        >
+                            All Projects
+                        </button>
+                        <button 
+                            class="filter-btn" 
+                            data-filter="elearning"
+                            role="tab"
+                            aria-selected="false"
+                            aria-controls="elearning-projects"
+                        >
+                            eLearning
+                        </button>
+                        <button 
+                            class="filter-btn" 
+                            data-filter="training"
+                            role="tab"
+                            aria-selected="false"
+                            aria-controls="training-projects"
+                        >
+                            Training Programs
+                        </button>
+                        <button 
+                            class="filter-btn" 
+                            data-filter="mobile"
+                            role="tab"
+                            aria-selected="false"
+                            aria-controls="mobile-projects"
+                        >
+                            Mobile Learning
+                        </button>
+                    </div>
+
+                    <!-- Projects Grid -->
+                    <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" role="tabpanel" aria-labelledby="all-projects">
+                        <!-- Project 1 -->
+                        <article class="project-card bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all duration-300" data-category="elearning">
+                            <div class="aspect-video bg-gray-200">
+                                <img 
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQrt3IUDP0mz-GqDxjyxw0PAfqE5iMCWtqovu0g2s5qrUZ91Jtc3qE6KV4727mMf2lAWnLemU1jIF1NiG48Zd616U78aKw5t0csadINtijVW3_2BVUg5IKl5sI3zQJHBRClVaaiYO9qWKtvfoqs_y6rgVSCSa79k3BlAxL0oSUmZ_W1obDcTi9kHxjLiEesMtotG69XuIWVa8_nvEP1jTiqlGUUII7V1WVN35NPFfio5xPLgLYhYEH9-aTPbxFsLCcyIh6lzE7JEE" 
+                                    alt="E-commerce Training Platform Project"
+                                    class="w-full h-full object-cover"
+                                    loading="lazy"
+                                >
+                            </div>
+                            <div class="p-6">
+                                <div class="flex items-center gap-2 mb-3">
+                                    <span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full">eLearning</span>
+                                    <span class="px-3 py-1 bg-green-100 text-green-800 text-xs font-medium rounded-full">Completed</span>
+                                </div>
+                                <h3 class="text-xl font-semibold text-gray-900 mb-2">E-commerce Training Platform</h3>
+                                <p class="text-gray-600 mb-4">
+                                    A comprehensive eLearning platform for retail staff training, featuring interactive modules, assessments, and progress tracking.
+                                </p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center space-x-4 text-sm text-gray-500">
+                                        <span>Articulate Storyline</span>
+                                        <span>•</span>
+                                        <span>2023</span>
+                                    </div>
+                                    <button 
+                                        class="text-blue-600 hover:text-blue-700 font-medium" 
+                                        onclick="openProjectModal('project1')"
+                                        aria-label="View details of E-commerce Training Platform project"
+                                    >
+                                        View Details →
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Project 2 -->
+                        <article class="project-card bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all duration-300" data-category="training">
+                            <div class="aspect-video bg-gray-200">
+                                <img 
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmoQ-cO_STzR9nKXCgZIYC3OHJKZdsxBcr_JRzESXrnQJgJ0nq7dO8FN2uhZV7CHBvmWeWs4sffmVJ9XSgIiHKxEQlEG96BAuI05x3GB_m6mk6OLKyfO68hA6XfWJ-5gLXglyk9QVYEnpCpJD7a1KDUIu4APx_AAHlDhh4UOrcXeaRM1vx7OBZFc8D60Smopu8LefLG365_Pta2y5gT2mOta-LNCv5C3Zw3GisTeay3PSmpRwT-aynsjuAqaOO2NXQoHsaKXHaQSw" 
+                                    alt="Leadership Development Program Project"
+                                    class="w-full h-full object-cover"
+                                    loading="lazy"
+                                >
+                            </div>
+                            <div class="p-6">
+                                <div class="flex items-center gap-2 mb-3">
+                                    <span class="px-3 py-1 bg-purple-100 text-purple-800 text-xs font-medium rounded-full">Training</span>
+                                    <span class="px-3 py-1 bg-green-100 text-green-800 text-xs font-medium rounded-full">Completed</span>
+                                </div>
+                                <h3 class="text-xl font-semibold text-gray-900 mb-2">Leadership Development Program</h3>
+                                <p class="text-gray-600 mb-4">
+                                    A blended learning program for developing leadership skills, combining online modules with virtual workshops and coaching sessions.
+                                </p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center space-x-4 text-sm text-gray-500">
+                                        <span>Articulate Rise</span>
+                                        <span>•</span>
+                                        <span>2023</span>
+                                    </div>
+                                    <button 
+                                        class="text-blue-600 hover:text-blue-700 font-medium" 
+                                        onclick="openProjectModal('project2')"
+                                        aria-label="View details of Leadership Development Program project"
+                                    >
+                                        View Details →
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Project 3 -->
+                        <article class="project-card bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all duration-300" data-category="mobile">
+                            <div class="aspect-video bg-gray-200">
+                                <img 
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXMmLOpQHEWnwbhdAVChphQQJUPeBvKZxLUgrb9kA-8TiLQR5i6koiQaICMmUvxSIHhbD3b3u6giXBKNEQ-KAjKgJ-rm3TRAj6cy291V_BhYnFauQMkMlog0__pyMXdnR4TwS1lDY8DtUwU-yu8Qt7ojE6xk3ZRtyGILwOuhvHlSluQzEuTvkhRjyLct1QBPO8lW8du0RtNx0ayChfFhd4T_NiC5O5EkwRo0q2s1se289gRc8sXoLd3O_3AqIUxDvANpnRmDCIjT8" 
+                                    alt="Mobile Learning App Project"
+                                    class="w-full h-full object-cover"
+                                    loading="lazy"
+                                >
+                            </div>
+                            <div class="p-6">
+                                <div class="flex items-center gap-2 mb-3">
+                                    <span class="px-3 py-1 bg-orange-100 text-orange-800 text-xs font-medium rounded-full">Mobile</span>
+                                    <span class="px-3 py-1 bg-green-100 text-green-800 text-xs font-medium rounded-full">Completed</span>
+                                </div>
+                                <h3 class="text-xl font-semibold text-gray-900 mb-2">Mobile Learning App</h3>
+                                <p class="text-gray-600 mb-4">
+                                    A mobile-first learning application designed for on-the-go training, featuring microlearning modules and gamification elements.
+                                </p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center space-x-4 text-sm text-gray-500">
+                                        <span>React Native</span>
+                                        <span>•</span>
+                                        <span>2023</span>
+                                    </div>
+                                    <button 
+                                        class="text-blue-600 hover:text-blue-700 font-medium" 
+                                        onclick="openProjectModal('project3')"
+                                        aria-label="View details of Mobile Learning App project"
+                                    >
+                                        View Details →
+                                    </button>
               </div>
             </div>
-            <h2 class="text-[#141414] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Project Overview</h2>
-            <p class="text-[#141414] text-base font-normal leading-normal pb-3 pt-1 px-4">
-              This project involved a comprehensive redesign of the user experience for a leading travel booking platform. The goal was to enhance usability, improve user
-              satisfaction, and ultimately increase conversion rates. My role as the lead UX designer encompassed user research, information architecture, interaction design, and
-              visual design. The project resulted in a 20% increase in user engagement and a 15% rise in completed bookings.
-            </p>
-            <h2 class="text-[#141414] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Design Process</h2>
-            <p class="text-[#141414] text-base font-normal leading-normal pb-3 pt-1 px-4">
-              The design process began with extensive user research, including interviews, surveys, and usability testing of the existing platform. Key insights revealed user pain
-              points related to navigation, search functionality, and the booking flow. Based on these findings, I developed user personas and journey maps to guide the design
-              decisions.
-            </p>
-            <div class="flex w-full grow bg-neutral-50 @container p-4">
-              <div class="w-full gap-1 overflow-hidden bg-neutral-50 @[480px]:gap-2 aspect-[3/2] rounded-xl grid grid-cols-[2fr_1fr_1fr]">
-                <div
-                  class="w-full bg-center bg-no-repeat bg-cover aspect-auto rounded-none row-span-2"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDyClHYCtJGOtUMLjGP-fR5MPQb2b4NKZzVfQzdanwmLeuNUeAIcps1AG3k5pxFoaR6sbVaqcjncGnyCJVjHsH52cJZJNXPsCu1XlyAyx1BnOmn5xd0bVvZwqihqCetFPkK2E-3il-FkAKIo9iatqWevmyPXGTnuCe31sb6dkoD4PdWd4_2j_d_xOuBbLEUCSCImV6YrDOnXTLr4x0uXdA6SYCyzXMkAjazADGYIs_r35-6kbRd69FmycKajApSf_BUhwzKTaezimo");'
-                ></div>
-                <div
-                  class="w-full bg-center bg-no-repeat bg-cover aspect-auto rounded-none col-span-2 row-span-2"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCLt0_w6AYBPXKPk6ezAMSQsPCLYkK_EJ3nutLcBvJ4PkU7POVphSsULC27rq66egYIQt935o5iB9FZypArJH1ECnYlQZm5xfvAi8vpeqecouUAqc415S1C3HOJe3MM3tZjQJ3ZDbwcq9yal3cCUwEeN45pO3I9X-Gn0GDrEsC2sgpi7_CXRNn5iUCHeJuZ5mSWh-U-jU2vt_wk09Y6_4n8d_DfCJSGfpVcSPVn60q1hPzTyBu-MoYBqHQ6nKwqTzB9V-Q844tSXhU");'
-                ></div>
+                        </article>
+
+                        <!-- Project 4 -->
+                        <article class="project-card bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all duration-300" data-category="elearning">
+                            <div class="aspect-video bg-gray-200">
+                                <img 
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuE8Qrt3IUDP0mz-GqDxjyxw0PAfqE5iMCWtqovu0g2s5qrUZ91Jtc3qE6KV4727mMf2lAWnLemU1jIF1NiG48Zd616U78aKw5t0csadINtijVW3_2BVUg5IKl5sI3zQJHBRClVaaiYO9qWKtvfoqs_y6rgVSCSa79k3BlAxL0oSUmZ_W1obDcTi9kHxjLiEesMtotG69XuIWVa8_nvEP1jTiqlGUUII7V1WVN35NPFfio5xPLgLYhYEH9-aTPbxFsLCcyIh6lzE7JEE" 
+                                    alt="Safety Training Module Project"
+                                    class="w-full h-full object-cover"
+                                    loading="lazy"
+                                >
+                            </div>
+                            <div class="p-6">
+                                <div class="flex items-center gap-2 mb-3">
+                                    <span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full">eLearning</span>
+                                    <span class="px-3 py-1 bg-green-100 text-green-800 text-xs font-medium rounded-full">Completed</span>
+                                </div>
+                                <h3 class="text-xl font-semibold text-gray-900 mb-2">Workplace Safety Training</h3>
+                                <p class="text-gray-600 mb-4">
+                                    Interactive safety training modules for manufacturing environments, featuring scenario-based learning and compliance tracking.
+                                </p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center space-x-4 text-sm text-gray-500">
+                                        <span>Articulate Storyline</span>
+                                        <span>•</span>
+                                        <span>2022</span>
+                                    </div>
+                                    <button 
+                                        class="text-blue-600 hover:text-blue-700 font-medium" 
+                                        onclick="openProjectModal('project4')"
+                                        aria-label="View details of Workplace Safety Training project"
+                                    >
+                                        View Details →
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Project 5 -->
+                        <article class="project-card bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all duration-300" data-category="training">
+                            <div class="aspect-video bg-gray-200">
+                                <img 
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuF9Qrt3IUDP0mz-GqDxjyxw0PAfqE5iMCWtqovu0g2s5qrUZ91Jtc3qE6KV4727mMf2lAWnLemU1jIF1NiG48Zd616U78aKw5t0csadINtijVW3_2BVUg5IKl5sI3zQJHBRClVaaiYO9qWKtvfoqs_y6rgVSCSa79k3BlAxL0oSUmZ_W1obDcTi9kHxjLiEesMtotG69XuIWVa8_nvEP1jTiqlGUUII7V1WVN35NPFfio5xPLgLYhYEH9-aTPbxFsLCcyIh6lzE7JEE" 
+                                    alt="Customer Service Training Project"
+                                    class="w-full h-full object-cover"
+                                    loading="lazy"
+                                >
+                            </div>
+                            <div class="p-6">
+                                <div class="flex items-center gap-2 mb-3">
+                                    <span class="px-3 py-1 bg-purple-100 text-purple-800 text-xs font-medium rounded-full">Training</span>
+                                    <span class="px-3 py-1 bg-green-100 text-green-800 text-xs font-medium rounded-full">Completed</span>
+                                </div>
+                                <h3 class="text-xl font-semibold text-gray-900 mb-2">Customer Service Excellence</h3>
+                                <p class="text-gray-600 mb-4">
+                                    Comprehensive customer service training program with role-playing scenarios and performance assessment tools.
+                                </p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center space-x-4 text-sm text-gray-500">
+                                        <span>Vyond + Articulate</span>
+                                        <span>•</span>
+                                        <span>2022</span>
+                                    </div>
+                                    <button 
+                                        class="text-blue-600 hover:text-blue-700 font-medium" 
+                                        onclick="openProjectModal('project5')"
+                                        aria-label="View details of Customer Service Excellence project"
+                                    >
+                                        View Details →
+                                    </button>
               </div>
             </div>
-            <p class="text-[#141414] text-base font-normal leading-normal pb-3 pt-1 px-4">
-              The next phase involved ideation and prototyping. I explored various design concepts through sketches and wireframes, iterating based on feedback from stakeholders
-              and users. This led to the development of high-fidelity mockups and interactive prototypes, which were further refined through usability testing.
-            </p>
-            <div class="flex w-full grow bg-neutral-50 @container p-4">
-              <div class="w-full gap-1 overflow-hidden bg-neutral-50 @[480px]:gap-2 aspect-[3/2] rounded-xl grid grid-cols-[2fr_1fr_1fr]">
-                <div
-                  class="w-full bg-center bg-no-repeat bg-cover aspect-auto rounded-none row-span-2"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDxDroLqGiJgch_Mop2CvXpWtpS9Hpl7iTDINj3X18nANFmcxQKdH8X4e2wytGgCxMvUh93NAYedF_jOf-liiy1Arj-r14KsvRxDFeqLv0tcxOy4B8iEuCZLAvOqLXpetdo633Hhf--CBXnZtI8GmXvlkrxaJi1Yj2RwTzkLeo9HqpuuK0uLtm9II3FqL3XHYAxSVltEplBaBTE67c_unhY9FVmH0snPnK_zllWqQGx4k4sESnlqa6jJHEjKk8xzkoCaaCbw6zqtJg");'
-                ></div>
-                <div
-                  class="w-full bg-center bg-no-repeat bg-cover aspect-auto rounded-none col-span-2 row-span-2"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDePD_nxRjv9HJXycYPbWG1qfLIUtataDikKnhfw4wZuwsmzryndBhxijjgpFDeH7LJDtx6DxxykUAHmbbsFUJZzbQoBNEERUn5HbCvC7SLlQewa4QmetnUyC_eE3sayJUwLCj3c27ZDknJt1G1N1WMWvnfyaZNHu6TViJhQFEaUF6NrKA9nSRmzYZQ94bB1l4ghOW-d4mcuq-m5HoHmGtYm8hVQ7D3ziBBLfst6XyMMO_xHjLXL71Oy4ElwZWI-YX3DtUzjxJ2Uck");'
-                ></div>
+                        </article>
+
+                        <!-- Project 6 -->
+                        <article class="project-card bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-all duration-300" data-category="mobile">
+                            <div class="aspect-video bg-gray-200">
+                                <img 
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuG0Qrt3IUDP0mz-GqDxjyxw0PAfqE5iMCWtqovu0g2s5qrUZ91Jtc3qE6KV4727mMf2lAWnLemU1jIF1NiG48Zd616U78aKw5t0csadINtijVW3_2BVUg5IKl5sI3zQJHBRClVaaiYO9qWKtvfoqs_y6rgVSCSa79k3BlAxL0oSUmZ_W1obDcTi9kHxjLiEesMtotG69XuIWVa8_nvEP1jTiqlGUUII7V1WVN35NPFfio5xPLgLYhYEH9-aTPbxFsLCcyIh6lzE7JEE" 
+                                    alt="Sales Training Platform Project"
+                                    class="w-full h-full object-cover"
+                                    loading="lazy"
+                                >
+                            </div>
+                            <div class="p-6">
+                                <div class="flex items-center gap-2 mb-3">
+                                    <span class="px-3 py-1 bg-orange-100 text-orange-800 text-xs font-medium rounded-full">Mobile</span>
+                                    <span class="px-3 py-1 bg-green-100 text-green-800 text-xs font-medium rounded-full">Completed</span>
+                                </div>
+                                <h3 class="text-xl font-semibold text-gray-900 mb-2">Sales Training Platform</h3>
+                                <p class="text-gray-600 mb-4">
+                                    A mobile-responsive sales training platform with interactive simulations, real-time performance analytics, and personalized learning paths.
+                                </p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center space-x-4 text-sm text-gray-500">
+                                        <span>WalkMe + LMS</span>
+                                        <span>•</span>
+                                        <span>2022</span>
+                                    </div>
+                                    <button 
+                                        class="text-blue-600 hover:text-blue-700 font-medium" 
+                                        onclick="openProjectModal('project6')"
+                                        aria-label="View details of Sales Training Platform project"
+                                    >
+                                        View Details →
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Project Modal -->
+        <div id="project-modal" class="modal" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
+            <div class="modal-content max-w-4xl">
+                <div class="modal-header">
+                    <h3 id="modal-title" class="text-2xl font-bold text-gray-900"></h3>
+                    <button 
+                        class="modal-close" 
+                        onclick="closeProjectModal()"
+                        aria-label="Close project details"
+                    >
+                        <i class="mdi mdi-close" aria-hidden="true"></i>
+                    </button>
+                </div>
+                <div class="p-6">
+                    <div id="modal-content"></div>
               </div>
             </div>
-            <h2 class="text-[#141414] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Final Design Solution</h2>
-            <p class="text-[#141414] text-base font-normal leading-normal pb-3 pt-1 px-4">
-              The final design solution features a streamlined navigation system, an intuitive search interface, and a simplified booking process. Key improvements include a more
-              visually appealing layout, clear calls to action, and personalized recommendations. The design was implemented using a responsive framework to ensure a consistent
-              experience across devices.
-            </p>
-            <div class="flex w-full grow bg-neutral-50 @container p-4">
-              <div class="w-full gap-1 overflow-hidden bg-neutral-50 @[480px]:gap-2 aspect-[3/2] rounded-xl grid grid-cols-[2fr_1fr_1fr]">
-                <div
-                  class="w-full bg-center bg-no-repeat bg-cover aspect-auto rounded-none row-span-2"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBfusPx71nIouLORkYYQejb2MviPE2FWHsu7pmYRSr9G3DyRPiKWa-ZdVZzmtNdQu0rHIixo-0EAuDSjzPAnA6k0OXgPnjynEAQPcTpbf1dxyhY9mB5iZcMZM9ztYkbz5IOnYi3aBEirQMmNeHaqZOZOIKbAb3_uEdyKHgbnTFzK1bk8JXZeb8YPhNwTaN2_FUjtaICVFYODQKg6xbz9gT31gb766hkuOR_-eFTtcqBQNSfwRwcDYVsdiAWZ1R7VBRuJ5SHhMAN6A0");'
-                ></div>
-                <div
-                  class="w-full bg-center bg-no-repeat bg-cover aspect-auto rounded-none col-span-2 row-span-2"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD-H65ofI-Bg-kPCn7qJfKE9IrnyL-4kQRBpuDd3mgPIceaE5Y8m3y8dlwnRPVztBrSo2sK7ob4LKGA3rte89GStCniRHjoFFs1UT0vaoC6zNOUOtN4oO3Dw5UK9gG7gf7vbslgEpwJxdv4894A0NEyj6IbCD2RHUvJMNX9CEactZ69oXYs_Pu_P7VGxj0VRJYFAdRUjihhcUOGgrpuGKLvT2RH9koNol_tMH90QYacaIwKqqhCfMJ5rkdD__UFVRMdUrNiD8d4JwU");'
-                ></div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="bg-gray-900 text-white py-12" role="contentinfo">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <p class="text-gray-400">
+                        © <span id="current-year"></span> Vishal Mewara. All rights reserved.
+                    </p>
               </div>
             </div>
-            <h2 class="text-[#141414] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Results and Learnings</h2>
-            <p class="text-[#141414] text-base font-normal leading-normal pb-3 pt-1 px-4">
-              The redesigned platform has been well-received by users, with significant improvements in key metrics. User engagement increased by 20%, and completed bookings rose
-              by 15%. These results demonstrate the impact of a user-centered design approach. Key learnings from this project include the importance of continuous user feedback
-              and the value of iterative design.
-            </p>
-            <p class="text-neutral-500 text-sm font-normal leading-normal pb-3 pt-1 px-4 underline">Back to Projects</p>
+        </footer>
+    </div>
+
+    <!-- Project Data -->
+    <script>
+        const projectData = {
+            project1: {
+                title: "E-commerce Training Platform",
+                category: "eLearning",
+                year: "2023",
+                tools: ["Articulate Storyline", "LMS Integration", "Assessment Tools"],
+                description: "A comprehensive eLearning platform designed for retail staff training in a major e-commerce company. The platform features interactive modules covering product knowledge, customer service, and sales techniques.",
+                challenges: "The main challenge was creating engaging content for a diverse workforce with varying technical skills and learning preferences.",
+                solution: "Developed a multi-modal learning approach with interactive scenarios, video demonstrations, and gamified assessments. Implemented adaptive learning paths based on individual performance.",
+                results: "Increased training completion rates by 85% and improved knowledge retention by 60%. Reduced training time by 40% while maintaining high engagement levels.",
+                features: [
+                    "Interactive product catalogs with 3D models",
+                    "Role-playing scenarios for customer interactions",
+                    "Real-time progress tracking and analytics",
+                    "Mobile-responsive design for on-the-go learning",
+                    "Integration with existing HR systems"
+                ]
+            },
+            project2: {
+                title: "Leadership Development Program",
+                category: "Training Programs",
+                year: "2023",
+                tools: ["Articulate Rise", "Virtual Workshops", "Coaching Platform"],
+                description: "A blended learning program designed to develop leadership skills across multiple organizational levels. The program combines online learning with virtual workshops and one-on-one coaching sessions.",
+                challenges: "Creating a scalable leadership development program that could accommodate different leadership styles and organizational contexts.",
+                solution: "Designed a modular curriculum with personalized learning paths, incorporating real-world case studies and peer learning opportunities.",
+                results: "Improved leadership effectiveness scores by 75% and increased employee satisfaction with management by 60%. 90% of participants reported feeling more confident in their leadership roles.",
+                features: [
+                    "360-degree feedback integration",
+                    "Virtual reality leadership simulations",
+                    "Peer mentoring network",
+                    "Customizable learning paths",
+                    "Executive coaching integration"
+                ]
+            },
+            project3: {
+                title: "Mobile Learning App",
+                category: "Mobile Learning",
+                year: "2023",
+                tools: ["React Native", "Node.js", "MongoDB"],
+                description: "A mobile-first learning application designed for field workers and remote employees. The app provides just-in-time training and performance support tools.",
+                challenges: "Creating an offline-capable learning solution that could work in areas with limited internet connectivity while maintaining data synchronization.",
+                solution: "Developed a hybrid mobile app with offline content caching, push notifications for learning reminders, and seamless data synchronization when connectivity is available.",
+                results: "Increased learning engagement by 120% and reduced training-related travel costs by 70%. 95% of users reported improved job performance after using the app.",
+                features: [
+                    "Offline content access",
+                    "Push notification reminders",
+                    "GPS-based learning triggers",
+                    "Social learning features",
+                    "Performance analytics dashboard"
+                ]
+            },
+            project4: {
+                title: "Workplace Safety Training",
+                category: "eLearning",
+                year: "2022",
+                tools: ["Articulate Storyline", "VR Integration", "Compliance Tracking"],
+                description: "Interactive safety training modules for manufacturing environments, focusing on hazard recognition, emergency procedures, and regulatory compliance.",
+                challenges: "Making safety training engaging while ensuring strict compliance with industry regulations and safety standards.",
+                solution: "Created immersive scenario-based learning experiences with virtual reality elements, real-time assessments, and comprehensive compliance tracking.",
+                results: "Reduced workplace incidents by 45% and achieved 100% regulatory compliance. Training completion rates increased to 98%.",
+                features: [
+                    "Virtual reality hazard simulations",
+                    "Real-time compliance reporting",
+                    "Interactive safety checklists",
+                    "Emergency procedure drills",
+                    "Regulatory audit trails"
+                ]
+            },
+            project5: {
+                title: "Customer Service Excellence",
+                category: "Training Programs",
+                year: "2022",
+                tools: ["Vyond", "Articulate Rise", "Assessment Platform"],
+                description: "Comprehensive customer service training program with animated scenarios, role-playing exercises, and performance assessment tools.",
+                challenges: "Creating realistic customer service scenarios that could prepare employees for various customer interactions and difficult situations.",
+                solution: "Developed animated video scenarios with branching storylines, interactive role-playing exercises, and comprehensive assessment tools.",
+                results: "Improved customer satisfaction scores by 35% and reduced customer complaints by 50%. Employee confidence in handling difficult situations increased by 80%.",
+                features: [
+                    "Animated customer scenarios",
+                    "Branching conversation paths",
+                    "Role-playing simulations",
+                    "Performance assessment tools",
+                    "Customer feedback integration"
+                ]
+            },
+            project6: {
+                title: "Sales Training Platform",
+                category: "Mobile Learning",
+                year: "2022",
+                tools: ["WalkMe", "LMS Integration", "Analytics Platform"],
+                description: "A mobile-responsive sales training platform with interactive simulations, real-time performance analytics, and personalized learning paths.",
+                challenges: "Creating a sales training solution that could adapt to different sales methodologies and provide real-time performance insights.",
+                solution: "Built a flexible platform with customizable sales scenarios, real-time performance tracking, and AI-powered recommendations for improvement.",
+                results: "Increased sales performance by 40% and improved sales team productivity by 55%. Reduced sales training time by 60%.",
+                features: [
+                    "Interactive sales simulations",
+                    "Real-time performance analytics",
+                    "AI-powered coaching recommendations",
+                    "Sales methodology customization",
+                    "Integration with CRM systems"
+                ]
+            }
+        };
+
+        // Project filtering functionality
+        function filterProjects(category) {
+            const projects = document.querySelectorAll('.project-card');
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            
+            // Update active button
+            filterButtons.forEach(btn => {
+                btn.classList.remove('active');
+                btn.setAttribute('aria-selected', 'false');
+            });
+            
+            event.target.classList.add('active');
+            event.target.setAttribute('aria-selected', 'true');
+            
+            // Filter projects
+            projects.forEach(project => {
+                if (category === 'all' || project.dataset.category === category) {
+                    project.style.display = 'block';
+                } else {
+                    project.style.display = 'none';
+                }
+            });
+        }
+
+        // Modal functionality
+        function openProjectModal(projectId) {
+            const modal = document.getElementById('project-modal');
+            const modalTitle = document.getElementById('modal-title');
+            const modalContent = document.getElementById('modal-content');
+            const project = projectData[projectId];
+            
+            if (project) {
+                modalTitle.textContent = project.title;
+                modalContent.innerHTML = `
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm font-medium rounded-full">${project.category}</span>
+                            <span class="text-gray-500">${project.year}</span>
+                        </div>
+                        
+                        <div>
+                            <h4 class="text-lg font-semibold text-gray-900 mb-2">Description</h4>
+                            <p class="text-gray-700">${project.description}</p>
+                        </div>
+                        
+                        <div>
+                            <h4 class="text-lg font-semibold text-gray-900 mb-2">Challenges</h4>
+                            <p class="text-gray-700">${project.challenges}</p>
+                        </div>
+                        
+                        <div>
+                            <h4 class="text-lg font-semibold text-gray-900 mb-2">Solution</h4>
+                            <p class="text-gray-700">${project.solution}</p>
+                        </div>
+                        
+                        <div>
+                            <h4 class="text-lg font-semibold text-gray-900 mb-2">Results</h4>
+                            <p class="text-gray-700">${project.results}</p>
+                        </div>
+                        
+                        <div>
+                            <h4 class="text-lg font-semibold text-gray-900 mb-2">Tools & Technologies</h4>
+                            <div class="flex flex-wrap gap-2">
+                                ${project.tools.map(tool => `<span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">${tool}</span>`).join('')}
           </div>
         </div>
+                        
+                        <div>
+                            <h4 class="text-lg font-semibold text-gray-900 mb-2">Key Features</h4>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                                ${project.features.map(feature => `<li>${feature}</li>`).join('')}
+                            </ul>
       </div>
     </div>
+                `;
+                
+                modal.classList.add('show');
+                modal.setAttribute('aria-hidden', 'false');
+                
+                // Focus management
+                const closeButton = modal.querySelector('.modal-close');
+                closeButton.focus();
+                
+                // Trap focus within modal
+                const focusableElements = modal.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
+                const firstElement = focusableElements[0];
+                const lastElement = focusableElements[focusableElements.length - 1];
+                
+                modal.addEventListener('keydown', function(e) {
+                    if (e.key === 'Escape') {
+                        closeProjectModal();
+                    }
+                    if (e.key === 'Tab') {
+                        if (e.shiftKey) {
+                            if (document.activeElement === firstElement) {
+                                e.preventDefault();
+                                lastElement.focus();
+                            }
+                        } else {
+                            if (document.activeElement === lastElement) {
+                                e.preventDefault();
+                                firstElement.focus();
+                            }
+                        }
+                    }
+                });
+            }
+        }
+
+        function closeProjectModal() {
+            const modal = document.getElementById('project-modal');
+            modal.classList.remove('show');
+            modal.setAttribute('aria-hidden', 'true');
+        }
+
+        // Initialize filter buttons
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const category = this.dataset.filter;
+                    filterProjects(category);
+                });
+            });
+            
+            // Close modal when clicking outside
+            const modal = document.getElementById('project-modal');
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    closeProjectModal();
+                }
+            });
+        });
+    </script>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
   </body>
 </html>

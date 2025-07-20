@@ -1,199 +1,517 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
-    <link rel="stylesheet" as="style" onload="this.rel='stylesheet'" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Public+Sans%3Awght%40400%3B500%3B700%3B900" />
-    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css" rel="stylesheet" />
-    <title>Stitch Design</title>
-    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Vishal Mewara - Instructional Designer & Developer Portfolio. Experienced professional with 10+ years in creating innovative digital learning experiences."
+    />
+    <meta
+      name="keywords"
+      content="instructional design, eLearning, developer, portfolio, Vishal Mewara"
+    />
+    <meta name="author" content="Vishal Mewara" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://vishalmewara.com/" />
+    <meta
+      property="og:title"
+      content="Vishal Mewara - Instructional Designer & Developer Portfolio"
+    />
+    <meta
+      property="og:description"
+      content="Experienced Instructional Designer & Developer with 10+ years in creating innovative digital learning experiences."
+    />
+    <meta
+      property="og:image"
+      content="https://media.licdn.com/dms/image/v2/D4D03AQFC4pZePWIFxg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1696746461584?e=1755734400&v=beta&t=Gnom0oF9NSksu06ruZArvsIOl6ee1Yi-rlFlFdM8QCA"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://vishalmewara.com/" />
+    <meta
+      property="twitter:title"
+      content="Vishal Mewara - Instructional Designer & Developer Portfolio"
+    />
+    <meta
+      property="twitter:description"
+      content="Experienced Instructional Designer & Developer with 10+ years in creating innovative digital learning experiences."
+    />
+    <meta
+      property="twitter:image"
+      content="https://media.licdn.com/dms/image/v2/D4D03AQFC4pZePWIFxg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1696746461584?e=1755734400&v=beta&t=Gnom0oF9NSksu06ruZArvsIOl6ee1Yi-rlFlFdM8QCA"
+    />
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+
+    <!-- Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Noto+Sans:wght@400;500;700;900&display=swap"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css"
+    />
+
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Vishal Mewara - Instructional Designer & Developer Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
   </head>
-  <body>
-    <div class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden" style='font-family: "Public Sans", "Noto Sans", sans-serif;'>
-      <div class="layout-container flex h-full grow flex-col">
-        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f0f2f5] px-10 py-3">
-          <div class="flex items-center gap-4 text-[#111418]">
-            <div class="size-4">
-              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_6_319)">
-                  <path d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z" fill="currentColor"></path>
-                </g>
-                <defs>
-                  <clipPath id="clip0_6_319">
-                    <rect width="48" height="48" fill="white"></rect>
-                  </clipPath>
-                </defs>
-              </svg>
+  <body class="bg-white font-sans antialiased">
+    <!-- Skip to main content for accessibility -->
+    <a
+      href="#main-content"
+      class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-blue-600 text-white px-4 py-2 rounded z-50"
+    >
+      Skip to main content
+    </a>
+
+    <div class="min-h-screen flex flex-col">
+      <!-- Header -->
+      <header
+        class="sticky top-0 z-40 bg-white/95 backdrop-blur-sm border-b border-gray-200 shadow-sm"
+      >
+        <nav
+          class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
+          role="navigation"
+          aria-label="Main navigation"
+        >
+          <div class="flex items-center justify-between h-16">
+            <!-- Logo -->
+            <div class="flex items-center space-x-3">
+              <div class="w-8 h-8 text-blue-600" aria-hidden="true">
+                <svg
+                  viewBox="0 0 48 48"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_6_319)">
+                    <path
+                      d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z"
+                      fill="currentColor"
+                    ></path>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_6_319">
+                      <rect width="48" height="48" fill="white"></rect>
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <h1 class="text-xl font-bold text-gray-900">Portfolio</h1>
             </div>
-            <h2 class="text-[#111418] text-lg font-bold leading-tight tracking-[-0.015em]">Portfolio</h2>
-          </div>
-          <div class="flex flex-1 justify-end gap-8">
-            <div class="flex items-center gap-9">
-              <a class="text-[#111418] text-sm font-medium leading-normal" href="index.html">Home</a>
-              <a class="text-[#111418] text-sm font-medium leading-normal" href="about.html">About</a>
-              <a class="text-[#111418] text-sm font-medium leading-normal" href="Project.html">Projects</a>
-              <a class="text-[#111418] text-sm font-medium leading-normal" href="#">Contact</a>
+
+            <!-- Navigation Links -->
+            <div class="hidden md:flex items-center space-x-8" role="menubar">
+              <a
+                href="index.html"
+                class="text-blue-600 font-medium"
+                role="menuitem"
+                aria-current="page"
+                >Home</a
+              >
+              <a
+                href="about.html"
+                class="text-gray-900 hover:text-blue-600 transition-colors duration-200 font-medium"
+                role="menuitem"
+                >About</a
+              >
+              <a
+                href="Project.html"
+                class="text-gray-900 hover:text-blue-600 transition-colors duration-200 font-medium"
+                role="menuitem"
+                >Projects</a
+              >
+              <a
+                href="Contact.html"
+                class="text-gray-900 hover:text-blue-600 transition-colors duration-200 font-medium"
+                role="menuitem"
+                >Contact</a
+              >
             </div>
-            <button onclick="downloadPDF()" class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#0c7ff2] text-white text-sm font-bold leading-normal tracking-[0.015em]">
-              <span class="truncate">Download CV</span>
+
+            <!-- CTA Button -->
+            <button
+              id="download-cv-btn"
+              class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+              aria-label="Download my resume"
+            >
+              Download CV
             </button>
-            <script>
-              function downloadPDF() {
-                const link = document.createElement('a');
-                link.href = "https://vishalmewada.github.io/VishalMewara/Vishal%20Mewara%20-%20Resume%20-%20Assistant%20Manager%20L&D.pdf";
-                link.download = "Vishal_Mewara_Resume.pdf";
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
-              }
-            </script>
+
+            <!-- Mobile menu button -->
+            <button
+              id="mobile-menu-btn"
+              class="md:hidden p-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              aria-label="Toggle mobile menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <i class="mdi mdi-menu text-xl" aria-hidden="true"></i>
+            </button>
           </div>
-        </header>
-        <div class="px-40 flex flex-1 justify-center py-5">
-          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
-            <div class="@container">
-              <div class="@[480px]:p-4">
-                <div class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-lg items-start justify-end px-4 pb-10 @[480px]:px-10" style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDqtOBmFkHuWIHK1aVBRccDmKZkOXuAIMi_a2dhQBZYEnOdI-2e4Em0W_3TJaZ7xsZ3aevjce6KTL2K8Nx_ILyDoRSNgP6_T53TLZBbhHJbdO6ES16r0iP4PUTjrsvlDR66MWRe5P23cdZ72q7fUqY3Al62YzFM0abyXAr3HKi4IU4am_TuXoXjTCfX8UgZCXKxGnALB0HM1wk0m-_fFBrpl_LPFxyjoaCAjpBRX6sZOgCLE_TNfTkyUmr6BqVZFeySaJ2a6EdSBzc");'>
-                  <div class="flex flex-col gap-2 text-left">
-                    <h1 class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"> Welcome to My Portfolio </h1>
-                    <h2 class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal"> I'm a passionate Instructional Designer and Developer with a focus on creating innovative digital experiences. Explore my work and let's collaborate! </h2>
-                  </div>
-                  <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#0c7ff2] text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]">
-                    <span class="truncate">View My Work</span>
-                  </button>
+
+          <!-- Mobile menu -->
+          <div
+            id="mobile-menu"
+            class="hidden md:hidden pb-4"
+            role="menu"
+            aria-labelledby="mobile-menu-btn"
+          >
+            <div class="flex flex-col space-y-3">
+              <a
+                href="index.html"
+                class="text-blue-600 font-medium"
+                role="menuitem"
+                aria-current="page"
+                >Home</a
+              >
+              <a
+                href="about.html"
+                class="text-gray-900 hover:text-blue-600 transition-colors duration-200 font-medium"
+                role="menuitem"
+                >About</a
+              >
+              <a
+                href="Project.html"
+                class="text-gray-900 hover:text-blue-600 transition-colors duration-200 font-medium"
+                role="menuitem"
+                >Projects</a
+              >
+              <a
+                href="Contact.html"
+                class="text-gray-900 hover:text-blue-600 transition-colors duration-200 font-medium"
+                role="menuitem"
+                >Contact</a
+              >
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <!-- Main Content -->
+      <main id="main-content" class="flex-1">
+        <!-- Hero Section -->
+        <section
+          class="relative bg-gradient-to-br from-blue-600 to-blue-800 text-white"
+          aria-labelledby="hero-heading"
+        >
+          <div class="absolute inset-0 bg-black/20"></div>
+          <div
+            class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32"
+          >
+            <div class="max-w-3xl">
+              <h2
+                id="hero-heading"
+                class="text-4xl lg:text-6xl font-black leading-tight mb-6"
+              >
+                Welcome to My Portfolio
+              </h2>
+              <p class="text-xl lg:text-2xl mb-8 text-blue-100">
+                I'm a passionate Instructional Designer and Developer with a
+                focus on creating innovative digital experiences. Explore my
+                work and let's collaborate!
+              </p>
+              <a
+                href="Project.html"
+                class="inline-flex items-center bg-white text-blue-600 font-bold py-3 px-6 rounded-lg hover:bg-gray-100 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-blue-600"
+                aria-label="View my projects and work"
+              >
+                View My Work
+                <i class="mdi mdi-arrow-right ml-2" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="py-16 bg-gray-50" aria-labelledby="about-heading">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2
+              id="about-heading"
+              class="text-3xl font-bold text-gray-900 mb-12 text-center"
+            >
+              About Me
+            </h2>
+            <div
+              class="flex flex-col lg:flex-row items-center lg:items-start gap-8"
+            >
+              <div class="flex-shrink-0">
+                <img
+                  src="https://media.licdn.com/dms/image/v2/D4D03AQFC4pZePWIFxg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1696746461584?e=1755734400&v=beta&t=Gnom0oF9NSksu06ruZArvsIOl6ee1Yi-rlFlFdM8QCA"
+                  alt="Vishal Mewara - Instructional Designer & Developer"
+                  class="w-32 h-32 lg:w-40 lg:h-40 rounded-full object-cover shadow-lg"
+                  loading="lazy"
+                />
+              </div>
+              <div class="flex-1 text-center lg:text-left">
+                <h3 class="text-2xl font-bold text-gray-900 mb-2">
+                  Vishal Mewara
+                </h3>
+                <p class="text-lg text-gray-600 mb-4">
+                  Experienced Instructional Designer & Developer
+                </p>
+                <p class="text-gray-700 leading-relaxed">
+                  With over 10+ years of experience in the tech & supply chain
+                  industry, I specialize in creating user-centered eLearning
+                  content that is both aesthetically pleasing and highly
+                  functional. My expertise includes user analysis, prototyping,
+                  and eLearning design.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="py-16" aria-labelledby="skills-heading">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2
+              id="skills-heading"
+              class="text-3xl font-bold text-gray-900 mb-12 text-center"
+            >
+              Skills
+            </h2>
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
+              role="list"
+            >
+              <div class="bg-gray-100 rounded-lg px-4 py-3" role="listitem">
+                <span class="text-gray-900 font-medium"
+                  >Learning Program Strategy & Execution</span
+                >
+              </div>
+              <div class="bg-gray-100 rounded-lg px-4 py-3" role="listitem">
+                <span class="text-gray-900 font-medium">Storyboarding</span>
+              </div>
+              <div class="bg-gray-100 rounded-lg px-4 py-3" role="listitem">
+                <span class="text-gray-900 font-medium"
+                  >Instructional Design (ADDIE, Agile, SAM)</span
+                >
+              </div>
+              <div class="bg-gray-100 rounded-lg px-4 py-3" role="listitem">
+                <span class="text-gray-900 font-medium"
+                  >AI-Driven Content Development</span
+                >
+              </div>
+              <div class="bg-gray-100 rounded-lg px-4 py-3" role="listitem">
+                <span class="text-gray-900 font-medium">WalkMe</span>
+              </div>
+              <div class="bg-gray-100 rounded-lg px-4 py-3" role="listitem">
+                <span class="text-gray-900 font-medium"
+                  >Global Team Collaboration & Coaching</span
+                >
+              </div>
+              <div class="bg-gray-100 rounded-lg px-4 py-3" role="listitem">
+                <span class="text-gray-900 font-medium">Vyond</span>
+              </div>
+              <div class="bg-gray-100 rounded-lg px-4 py-3" role="listitem">
+                <span class="text-gray-900 font-medium"
+                  >Articulate Storyline & Rise 360</span
+                >
+              </div>
+              <div class="bg-gray-100 rounded-lg px-4 py-3" role="listitem">
+                <span class="text-gray-900 font-medium"
+                  >Microsoft Office Suite</span
+                >
+              </div>
+              <div class="bg-gray-100 rounded-lg px-4 py-3" role="listitem">
+                <span class="text-gray-900 font-medium"
+                  >Manhattan FastTrack</span
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="py-16 bg-gray-50" aria-labelledby="projects-heading">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2
+              id="projects-heading"
+              class="text-3xl font-bold text-gray-900 mb-12 text-center"
+            >
+              Featured Projects
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <!-- Project 1 -->
+              <article
+                class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
+              >
+                <div class="aspect-video bg-gray-200">
+                  <img
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQrt3IUDP0mz-GqDxjyxw0PAfqE5iMCWtqovu0g2s5qrUZ91Jtc3qE6KV4727mMf2lAWnLemU1jIF1NiG48Zd616U78aKw5t0csadINtijVW3_2BVUg5IKl5sI3zQJHBRClVaaiYO9qWKtvfoqs_y6rgVSCSa79k3BlAxL0oSUmZ_W1obDcTi9kHxjLiEesMtotG69XuIWVa8_nvEP1jTiqlGUUII7V1WVN35NPFfio5xPLgLYhYEH9-aTPbxFsLCcyIh6lzE7JEE"
+                    alt="E-commerce Redesign Project"
+                    class="w-full h-full object-cover"
+                    loading="lazy"
+                  />
                 </div>
-              </div>
-            </div>
-            <h2 class="text-[#111418] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">About Me</h2>
-            <div class="flex p-4 @container">
-              <div class="flex w-full flex-col gap-4 @[520px]:flex-row @[520px]:justify-between @[520px]:items-center">
-                <div class="flex gap-4">
-                  <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full min-h-32 w-32" style='background-image: url("https://media.licdn.com/dms/image/v2/D4D03AQFC4pZePWIFxg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1696746461584?e=1755734400&v=beta&t=Gnom0oF9NSksu06ruZArvsIOl6ee1Yi-rlFlFdM8QCA");'></div>
-                  <div class="flex flex-col justify-center">
-                    <p class="text-[#111418] text-[22px] font-bold leading-tight tracking-[-0.015em]">Vishal Mewara</p>
-                    <p class="text-[#60758a] text-base font-normal leading-normal">Experienced Instructional Designer & Developer</p>
-                    <p class="text-[#60758a] text-base font-normal leading-normal"> With over 10+ years of experience in the tech & supply chain industry, I specialize in creating user-centered eLearning content that is both aesthetically pleasing and highly functional. My expertise includes user analysis, prototyping, and eLearning design. </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <h2 class="text-[#111418] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Skills</h2>
-            <div class="flex gap-3 p-3 flex-wrap pr-4">
-              <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#f0f2f5] pl-4 pr-4">
-                <p class="text-[#111418] text-sm font-medium leading-normal">Learning Program Strategy & Execution</p>
-              </div>
-			  <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#f0f2f5] pl-4 pr-4">
-                <p class="text-[#111418] text-sm font-medium leading-normal">Storyboarding</p>
-              </div>
-              <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#f0f2f5] pl-4 pr-4">
-                <p class="text-[#111418] text-sm font-medium leading-normal">Instructional Design (ADDIE, Agile, SAM)</p>
-              </div>
-              <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#f0f2f5] pl-4 pr-4">
-                <p class="text-[#111418] text-sm font-medium leading-normal">AI-Driven Content Development</p>
-              </div>
-			  <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#f0f2f5] pl-4 pr-4">
-                <p class="text-[#111418] text-sm font-medium leading-normal">WalkMe</p>
-              </div>
-              <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#f0f2f5] pl-4 pr-4">
-                <p class="text-[#111418] text-sm font-medium leading-normal">Global Team Collaboration & Coaching</p>
-              </div>
-			  <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#f0f2f5] pl-4 pr-4">
-                <p class="text-[#111418] text-sm font-medium leading-normal">Vyond</p>
-              </div>
-              <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#f0f2f5] pl-4 pr-4">
-                <p class="text-[#111418] text-sm font-medium leading-normal">Articulate Storyline & Rise 360</p>
-              </div>
-              <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#f0f2f5] pl-4 pr-4">
-                <p class="text-[#111418] text-sm font-medium leading-normal">Microsoft Office (Word, Excel, PowerPoint)</p>
-              </div>
-              <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#f0f2f5] pl-4 pr-4">
-                <p class="text-[#111418] text-sm font-medium leading-normal">Manhattan FastTrack</p>
-              </div>
-            </div>
-            <h2 class="text-[#111418] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Projects</h2>
-            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
-              <div class="flex flex-col gap-3 pb-3">
-                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAQrt3IUDP0mz-GqDxjyxw0PAfqE5iMCWtqovu0g2s5qrUZ91Jtc3qE6KV4727mMf2lAWnLemU1jIF1NiG48Zd616U78aKw5t0csadINtijVW3_2BVUg5IKl5sI3zQJHBRClVaaiYO9qWKtvfoqs_y6rgVSCSa79k3BlAxL0oSUmZ_W1obDcTi9kHxjLiEesMtotG69XuIWVa8_nvEP1jTiqlGUUII7V1WVN35NPFfio5xPLgLYhYEH9-aTPbxFsLCcyIh6lzE7JEE");'></div>
-                <div>
-                  <p class="text-[#111418] text-base font-medium leading-normal">E-commerce Redesign</p>
-                  <p class="text-[#60758a] text-sm font-normal leading-normal"> A complete redesign of an e-commerce platform to improve user experience and increase conversion rates. </p>
-                </div>
-              </div>
-              <div class="flex flex-col gap-3 pb-3">
-                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCmoQ-cO_STzR9nKXCgZIYC3OHJKZdsxBcr_JRzESXrnQJgJ0nq7dO8FN2uhZV7CHBvmWeWs4sffmVJ9XSgIiHKxEQlEG96BAuI05x3GB_m6mk6OLKyfO68hA6XfWJ-5gLXglyk9QVYEnpCpJD7a1KDUIu4APx_AAHlDhh4UOrcXeaRM1vx7OBZFc8D60Smopu8LefLG365_Pta2y5gT2mOta-LNCv5C3Zw3GisTeay3PSmpRwT-aynsjuAqaOO2NXQoHsaKXHaQSw");'></div>
-                <div>
-                  <p class="text-[#111418] text-base font-medium leading-normal">Mobile App for Fitness</p>
-                  <p class="text-[#60758a] text-sm font-normal leading-normal">A fitness app designed to help users track their workouts and achieve their fitness goals.</p>
-                </div>
-              </div>
-              <div class="flex flex-col gap-3 pb-3">
-                <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDXMmLOpQHEWnwbhdAVChphQQJUPeBvKZxLUgrb9kA-8TiLQR5i6koiQaICMmUvxSIHhbD3b3u6giXBKNEQ-KAjKgJ-rm3TRAj6cy291V_BhYnFauQMkMlog0__pyMXdnR4TwS1lDY8DtUwU-yu8Qt7ojE6xk3ZRtyGILwOuhvHlSluQzEuTvkhRjyLct1QBPO8lW8du0RtNx0ayChfFhd4T_NiC5O5EkwRo0q2s1se289gRc8sXoLd3O_3AqIUxDvANpnRmDCIjT8");'></div>
-                <div>
-                  <p class="text-[#111418] text-base font-medium leading-normal">Portfolio Website</p>
-                  <p class="text-[#60758a] text-sm font-normal leading-normal">The current portfolio website showcasing my work and skills.</p>
-                </div>
-              </div>
-            </div>
-            <h2 class="text-[#111418] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Contact</h2>
-            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
-              <label class="flex flex-col min-w-40 flex-1">
-                <p class="text-[#111418] text-base font-medium leading-normal pb-2">Name</p>
-                <input placeholder="Your Name" class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111418] focus:outline-0 focus:ring-0 border-none bg-[#f0f2f5] focus:border-none h-14 placeholder:text-[#60758a] p-4 text-base font-normal leading-normal" value="" />
-              </label>
-            </div>
-            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
-              <label class="flex flex-col min-w-40 flex-1">
-                <p class="text-[#111418] text-base font-medium leading-normal pb-2">Email</p>
-                <input placeholder="Your Email" class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111418] focus:outline-0 focus:ring-0 border-none bg-[#f0f2f5] focus:border-none h-14 placeholder:text-[#60758a] p-4 text-base font-normal leading-normal" value="" />
-              </label>
-            </div>
-            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
-              <label class="flex flex-col min-w-40 flex-1">
-                <p class="text-[#111418] text-base font-medium leading-normal pb-2">Message</p>
-                <textarea placeholder="Your Message" class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111418] focus:outline-0 focus:ring-0 border-none bg-[#f0f2f5] focus:border-none min-h-36 placeholder:text-[#60758a] p-4 text-base font-normal leading-normal"></textarea>
-              </label>
-            </div>
-            <div class="flex px-4 py-3 justify-start">
-              <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#0c7ff2] text-white text-sm font-bold leading-normal tracking-[0.015em]">
-                <span class="truncate">Send Message</span>
-              </button>
-            </div>
-            <p class="text-[#60758a] text-sm font-normal leading-normal pb-3 pt-1 px-4">Connect with me on social media:</p>
-            <div class="@container">
-              <div class="gap-2 px-4 flex flex-wrap justify-start">
-                <!-- X / Twitter -->
-                <div class="flex flex-col items-center gap-2 bg-white py-2.5 text-center w-20">
-                  <a href="https://x.com/VishalMewara_ID" target="_blank" class="rounded-full bg-[#f0f2f5] p-2.5 text-[#111418]">
-                    <i class="mdi mdi-twitter text-[20px]"></i>
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                    E-commerce Redesign
+                  </h3>
+                  <p class="text-gray-600 mb-4">
+                    A complete redesign of an e-commerce platform to improve
+                    user experience and increase conversion rates.
+                  </p>
+                  <a
+                    href="Project.html"
+                    class="text-blue-600 hover:text-blue-700 font-medium"
+                    aria-label="View details of E-commerce Redesign project"
+                  >
+                    View Details →
                   </a>
-                  <a href="https://x.com/VishalMewara_ID" target="_blank" class="text-[#111418] text-sm font-medium leading-normal">
-                    <span class="truncate">X</span>
+                </div>
+              </article>
+
+              <!-- Project 2 -->
+              <article
+                class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
+              >
+                <div class="aspect-video bg-gray-200">
+                  <img
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmoQ-cO_STzR9nKXCgZIYC3OHJKZdsxBcr_JRzESXrnQJgJ0nq7dO8FN2uhZV7CHBvmWeWs4sffmVJ9XSgIiHKxEQlEG96BAuI05x3GB_m6mk6OLKyfO68hA6XfWJ-5gLXglyk9QVYEnpCpJD7a1KDUIu4APx_AAHlDhh4UOrcXeaRM1vx7OBZFc8D60Smopu8LefLG365_Pta2y5gT2mOta-LNCv5C3Zw3GisTeay3PSmpRwT-aynsjuAqaOO2NXQoHsaKXHaQSw"
+                    alt="Mobile App for Fitness Project"
+                    class="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                    Mobile App for Fitness
+                  </h3>
+                  <p class="text-gray-600 mb-4">
+                    A fitness app designed to help users track their workouts
+                    and achieve their fitness goals.
+                  </p>
+                  <a
+                    href="Project.html"
+                    class="text-blue-600 hover:text-blue-700 font-medium"
+                    aria-label="View details of Mobile App for Fitness project"
+                  >
+                    View Details →
                   </a>
                 </div>
-                <!-- LinkedIn -->
-                <div class="flex flex-col items-center gap-2 bg-white py-2.5 text-center w-20">
-                  <a href="https://www.linkedin.com/in/vishalmewara/" target="_blank" class="rounded-full bg-[#f0f2f5] p-2.5 text-[#111418]">
-                    <i class="mdi mdi-linkedin text-[20px]"></i>
-                  </a>
-                  <a href="https://www.linkedin.com/in/vishalmewara/" target="_blank" class="text-[#111418] text-sm font-medium leading-normal">
-                    <span class="truncate">LinkedIn</span>
+              </article>
+
+              <!-- Project 3 -->
+              <article
+                class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
+              >
+                <div class="aspect-video bg-gray-200">
+                  <img
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXMmLOpQHEWnwbhdAVChphQQJUPeBvKZxLUgrb9kA-8TiLQR5i6koiQaICMmUvxSIHhbD3b3u6giXBKNEQ-KAjKgJ-rm3TRAj6cy291V_BhYnFauQMkMlog0__pyMXdnR4TwS1lDY8DtUwU-yu8Qt7ojE6xk3ZRtyGILwOuhvHlSluQzEuTvkhRjyLct1QBPO8lW8du0RtNx0ayChfFhd4T_NiC5O5EkwRo0q2s1se289gRc8sXoLd3O_3AqIUxDvANpnRmDCIjT8"
+                    alt="Portfolio Website Project"
+                    class="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                    Portfolio Website
+                  </h3>
+                  <p class="text-gray-600 mb-4">
+                    The current portfolio website showcasing my work and skills.
+                  </p>
+                  <a
+                    href="Project.html"
+                    class="text-blue-600 hover:text-blue-700 font-medium"
+                    aria-label="View details of Portfolio Website project"
+                  >
+                    View Details →
                   </a>
                 </div>
-              </div>
+              </article>
             </div>
+
+            <div class="text-center mt-12">
+              <a
+                href="Project.html"
+                class="inline-flex items-center bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                aria-label="View all projects in my portfolio"
+              >
+                View All Projects
+                <i class="mdi mdi-arrow-right ml-2" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Social Links Section -->
+        <section class="py-16" aria-labelledby="social-heading">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2
+              id="social-heading"
+              class="text-3xl font-bold text-gray-900 mb-12 text-center"
+            >
+              Connect With Me
+            </h2>
+            <div class="flex justify-center space-x-8">
+              <!-- X / Twitter -->
+              <a
+                href="https://x.com/VishalMewara_ID"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex flex-col items-center space-y-2 text-gray-600 hover:text-blue-600 transition-colors duration-200"
+                aria-label="Follow me on X (Twitter)"
+              >
+                <div
+                  class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center hover:bg-blue-100 transition-colors duration-200"
+                >
+                  <i class="mdi mdi-twitter text-2xl" aria-hidden="true"></i>
+                </div>
+                <span class="text-sm font-medium">X</span>
+              </a>
+
+              <!-- LinkedIn -->
+              <a
+                href="https://www.linkedin.com/in/vishalmewara/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex flex-col items-center space-y-2 text-gray-600 hover:text-blue-600 transition-colors duration-200"
+                aria-label="Connect with me on LinkedIn"
+              >
+                <div
+                  class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center hover:bg-blue-100 transition-colors duration-200"
+                >
+                  <i class="mdi mdi-linkedin text-2xl" aria-hidden="true"></i>
+                </div>
+                <span class="text-sm font-medium">LinkedIn</span>
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer class="bg-gray-900 text-white py-12" role="contentinfo">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center">
+            <p class="text-gray-400">
+              © <span id="current-year"></span> Vishal Mewara. All rights
+              reserved.
+            </p>
           </div>
         </div>
-        <footer class="flex justify-center">
-          <div class="flex max-w-[960px] flex-1 flex-col">
-            <footer class="text-center px-5 py-8 text-[#60758a] text-base font-normal border-t">
-              ©<span id="year"></span> Vishal Mewara. All rights reserved.
-            </footer>
-            <script>
-              // Set current year
-              document.getElementById('year').textContent = new Date().getFullYear();
-            </script>
-          </div>
-        </footer>
-      </div>
+      </footer>
     </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
   </body>
 </html>
