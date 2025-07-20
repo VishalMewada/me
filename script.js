@@ -347,7 +347,7 @@ const FormHandler = {
             const data = Object.fromEntries(formData);
             
             // Basic validation
-            if (!data.user_name || !data.user_email || !data.message) {
+            if (!data.name || !data.email || !data.message) {
                 Utils.showNotification('Please fill in all required fields.', 'error');
                 return;
             }
@@ -359,8 +359,8 @@ const FormHandler = {
             
             // Prepare template parameters
             const templateParams = {
-                from_name: data.user_name,
-                from_email: data.user_email,
+                from_name: data.name,
+                from_email: data.email,
                 subject: data.subject || 'New Contact Form Submission',
                 message: data.message
             };
