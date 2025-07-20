@@ -340,6 +340,16 @@
 
     <!-- EmailJS CDN -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        // Check if EmailJS loaded successfully
+        window.addEventListener('load', function() {
+            if (typeof emailjs === 'undefined') {
+                console.error('EmailJS failed to load from CDN');
+            } else {
+                console.log('EmailJS loaded successfully from CDN');
+            }
+        });
+    </script>
     
     <!-- JavaScript -->
     <script src="script.js"></script>

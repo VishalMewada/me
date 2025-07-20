@@ -322,6 +322,7 @@ const FormHandler = {
     initEmailJS() {
         if (typeof emailjs !== 'undefined') {
             emailjs.init(CONFIG.EMAILJS.PUBLIC_KEY);
+            console.log('EmailJS initialized successfully');
         } else {
             console.error('EmailJS not loaded');
         }
@@ -357,13 +358,32 @@ const FormHandler = {
                 return;
             }
             
-            // Prepare template parameters
+            // Prepare template parameters - try multiple common variable names
             const templateParams = {
+                // Common EmailJS template variable names
                 from_name: data.name,
                 from_email: data.email,
+                name: data.name,
+                email: data.email,
                 subject: data.subject || 'New Contact Form Submission',
-                message: data.message
+                message: data.message,
+                // Additional variations that might be used in templates
+                user_name: data.name,
+                user_email: data.email,
+                contact_name: data.name,
+                contact_email: data.email,
+                sender_name: data.name,
+                sender_email: data.email
             };
+            
+            console.log('Form data collected:', data);
+            console.log('Template parameters:', templateParams);
+            console.log('EmailJS config:', CONFIG.EMAILJS);
+            
+            // Check if EmailJS is available
+            if (typeof emailjs === 'undefined') {
+                throw new Error('EmailJS not loaded');
+            }
             
             // Send email using EmailJS
             const response = await emailjs.send(
@@ -400,16 +420,71 @@ const FormHandler = {
     },
 
     /**
+     * Test EmailJS connection
+     */
+    async testEmailJS() {
+        try {
+            if (typeof emailjs === 'undefined') {
+                console.error('EmailJS not loaded');
+                return false;
+            }
+            
+            console.log('Testing EmailJS connection...');
+            console.log('Service ID:', CONFIG.EMAILJS.SERVICE_ID);
+            console.log('Template ID:', CONFIG.EMAILJS.TEMPLATE_ID);
+            console.log('Public Key:', CONFIG.EMAILJS.PUBLIC_KEY);
+            
+            // Test with minimal data
+            const testParams = {
+                from_name: 'Test User',
+                from_email: 'test@example.com',
+                name: 'Test User',
+                email: 'test@example.com',
+                subject: 'Test Email',
+                message: 'This is a test email from the contact form.'
+            };
+            
+            const response = await emailjs.send(
+                CONFIG.EMAILJS.SERVICE_ID,
+                CONFIG.EMAILJS.TEMPLATE_ID,
+                testParams
+            );
+            
+            console.log('EmailJS test successful:', response);
+            return true;
+        } catch (error) {
+            console.error('EmailJS test failed:', error);
+            return false;
+        }
+    },
+
+    /**
      * Initialize form event listeners
      */
     init() {
-        // Initialize EmailJS
+        // Initialize EmailJS with retry mechanism
         this.initEmailJS();
+        
+        // Retry EmailJS initialization if not loaded initially
+        if (typeof emailjs === 'undefined') {
+            setTimeout(() => {
+                console.log('Retrying EmailJS initialization...');
+                this.initEmailJS();
+            }, 1000);
+        }
         
         const contactForm = document.getElementById('contact-form');
         if (contactForm) {
             contactForm.addEventListener('submit', this.handleContactForm.bind(this));
+            console.log('Contact form event listener attached');
+        } else {
+            console.error('Contact form not found');
         }
+        
+        // Test EmailJS connection after a delay
+        setTimeout(() => {
+            this.testEmailJS();
+        }, 2000);
     }
 };
 
