@@ -27,8 +27,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdn.jsdelivr.net">
     
-    <!-- Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Noto+Sans:wght@400;500;700;900&display=swap">
+    <!-- Fonts - charity: water style -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&display=swap">
+    <!-- Note: For Proxima Nova, you'll need to add your Adobe Fonts kit code -->
+    <!-- <link rel="stylesheet" href="https://use.typekit.net/[YOUR_KIT_CODE].css"> -->
     
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
@@ -44,7 +46,7 @@
   </head>
 <body class="bg-white font-sans antialiased">
     <!-- Skip to main content for accessibility -->
-    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-blue-600 text-white px-4 py-2 rounded z-50">
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-[#2E9DF7] text-white px-4 py-2 rounded z-50">
         Skip to main content
     </a>
 
@@ -55,7 +57,7 @@
                 <div class="flex items-center justify-between h-16">
                     <!-- Logo -->
                     <div class="flex items-center space-x-3">
-                        <div class="w-8 h-8 text-blue-600" aria-hidden="true">
+                        <div class="w-8 h-8 text-[#2E9DF7]" aria-hidden="true">
               <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_6_319)">
                                     <path d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z" fill="currentColor"></path>
@@ -72,16 +74,16 @@
 
                     <!-- Navigation Links -->
                     <div class="hidden md:flex items-center space-x-8" role="menubar">
-                        <a href="index.html" class="text-gray-900 hover:text-blue-600 transition-colors duration-200 font-medium" role="menuitem">Home</a>
-                        <a href="about.html" class="text-gray-900 hover:text-blue-600 transition-colors duration-200 font-medium" role="menuitem">About</a>
-                        <a href="Project.html" class="text-blue-600 font-medium" role="menuitem" aria-current="page">Projects</a>
-                        <a href="Contact.html" class="text-gray-900 hover:text-blue-600 transition-colors duration-200 font-medium" role="menuitem">Contact</a>
+                        <a href="index.html" class="text-gray-900 hover:text-[#2E9DF7] transition-colors duration-200 font-medium" role="menuitem">Home</a>
+                        <a href="about.html" class="text-gray-900 hover:text-[#2E9DF7] transition-colors duration-200 font-medium" role="menuitem">About</a>
+                        <a href="Project.html" class="text-[#2E9DF7] font-medium" role="menuitem" aria-current="page">Projects</a>
+                        <a href="Contact.html" class="text-gray-900 hover:text-[#2E9DF7] transition-colors duration-200 font-medium" role="menuitem">Contact</a>
             </div>
 
                     <!-- CTA Button -->
                     <button 
                         id="download-cv-btn"
-                        class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                        class="bg-[#2E9DF7] hover:bg-[#1e7dd9] text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-[#2E9DF7] focus:ring-offset-2"
                         aria-label="Download my resume"
                     >
                         Download CV
@@ -90,7 +92,7 @@
                     <!-- Mobile menu button -->
                     <button 
                         id="mobile-menu-btn"
-                        class="md:hidden p-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        class="md:hidden p-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-[#2E9DF7]"
                         aria-label="Toggle mobile menu"
                         aria-expanded="false"
                         aria-controls="mobile-menu"
@@ -114,7 +116,7 @@
         <!-- Main Content -->
         <main id="main-content" class="flex-1">
             <!-- Hero Section -->
-            <section class="bg-gradient-to-br from-blue-50 to-indigo-100 py-16" aria-labelledby="hero-heading">
+            <section class="bg-gradient-to-br from-[#2E9DF7]/10 to-[#8BD1CB]/20 py-16" aria-labelledby="hero-heading">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="text-center">
                         <h2 id="hero-heading" class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
@@ -396,7 +398,7 @@
         <div id="project-modal" class="modal" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
             <div class="modal-content max-w-4xl">
                 <div class="modal-header">
-                    <h3 id="modal-title" class="text-2xl font-bold text-gray-900"></h3>
+                    <h3 id="modal-title" class="text-2xl text-white font-bold text-gray-900"></h3>
                     <button 
                         class="modal-close" 
                         onclick="closeProjectModal()"
@@ -567,39 +569,39 @@
                     <div class="space-y-6">
                         <div class="flex items-center gap-4">
                             <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm font-medium rounded-full">${project.category}</span>
-                            <span class="text-gray-500">${project.year}</span>
+                            <span class="text-white">${project.year}</span>
                         </div>
                         
                         <div>
-                            <h4 class="text-lg font-semibold text-gray-900 mb-2">Description</h4>
-                            <p class="text-gray-700">${project.description}</p>
+                            <h4 class="text-lg font-semibold text-white mb-2">Description</h4>
+                            <p class="text-white">${project.description}</p>
                         </div>
                         
                         <div>
-                            <h4 class="text-lg font-semibold text-gray-900 mb-2">Challenges</h4>
-                            <p class="text-gray-700">${project.challenges}</p>
+                            <h4 class="text-lg font-semibold text-white mb-2">Challenges</h4>
+                            <p class="text-white">${project.challenges}</p>
                         </div>
                         
                         <div>
-                            <h4 class="text-lg font-semibold text-gray-900 mb-2">Solution</h4>
-                            <p class="text-gray-700">${project.solution}</p>
+                            <h4 class="text-lg font-semibold text-white mb-2">Solution</h4>
+                            <p class="text-white">${project.solution}</p>
                         </div>
                         
                         <div>
-                            <h4 class="text-lg font-semibold text-gray-900 mb-2">Results</h4>
-                            <p class="text-gray-700">${project.results}</p>
+                            <h4 class="text-lg font-semibold text-white mb-2">Results</h4>
+                                <p class="text-white">${project.results}</p>
                         </div>
                         
                         <div>
-                            <h4 class="text-lg font-semibold text-gray-900 mb-2">Tools & Technologies</h4>
+                            <h4 class="text-lg font-semibold text-white mb-2">Tools & Technologies</h4>
                             <div class="flex flex-wrap gap-2">
                                 ${project.tools.map(tool => `<span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">${tool}</span>`).join('')}
           </div>
         </div>
                         
                         <div>
-                            <h4 class="text-lg font-semibold text-gray-900 mb-2">Key Features</h4>
-                            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                            <h4 class="text-lg font-semibold text-white mb-2">Key Features</h4>
+                            <ul class="list-disc list-inside text-white space-y-1">
                                 ${project.features.map(feature => `<li>${feature}</li>`).join('')}
                             </ul>
       </div>
