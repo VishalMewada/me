@@ -347,7 +347,7 @@ const FormHandler = {
             const data = Object.fromEntries(formData);
             
             // Basic validation
-            if (!data.name || !data.email || !data.message) {
+            if (!data.user_name || !data.user_email || !data.message) {
                 Utils.showNotification('Please fill in all required fields.', 'error');
                 return;
             }
